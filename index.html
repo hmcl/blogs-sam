@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html ng-app="hortonWorksApp" class="no-js" prefix="og: http://ogp.me/ns#" lang="en-US">
+   <head>
+      <script async="" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/FetchIPCompany.html"></script>
+      <style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button[not:disabled]:hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel[not:disabled]:hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger[not:disabled]:hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!-- base href="https://hortonworks.com/open-source/streaming-analytics-manager/" -->
+      <style>body{margin-left:0;margin-right:0;margin-top:0}#bN015htcoyT__google-cache-hdr{background:#f5f5f5;font:13px arial,sans-serif;text-align:left;color:#202020;border:0;margin:0;border-bottom:1px solid #cecece;line-height:16px;padding:16px 28px 24px 28px}#bN015htcoyT__google-cache-hdr *{display:inline;font:inherit;text-align:inherit;color:inherit;line-height:inherit;background:none;border:0;margin:0;padding:0;letter-spacing:0}#bN015htcoyT__google-cache-hdr a{text-decoration:none;color:#1a0dab}#bN015htcoyT__google-cache-hdr a:hover{text-decoration:underline}#bN015htcoyT__google-cache-hdr a:visited{color:#609}#bN015htcoyT__google-cache-hdr div{display:block;margin-top:4px}#bN015htcoyT__google-cache-hdr b{font-weight:bold;display:inline-block;direction:ltr}</style>
+      <script type="text/javascript" async="" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/ei.js"></script><script src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/bat.js" async=""></script><script async="" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/fbevents.js"></script><script type="text/javascript" async="" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/bf-munchkin.js"></script><script async="" id="demandbase_js_lib" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/Toj3rf6N.js"></script><script async="" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/uwt.js"></script><script type="text/javascript" async="" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/insight.js"></script><script type="text/javascript" async="" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/munchkin-beta.js"></script>
+      <link rel="stylesheet" type="text/css" href="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/prettify.css">
+      <script async="true" type="text/javascript" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/roundtrip.js"></script><script type="text/javascript" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/ei_track_all_packed.js"></script><script src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/stat.txt"></script>
+   </head>
+   <body class="opensource_project-template-default single single-opensource_project postid-95927 opensource_project-streaming-analytics-manager no-menu" style="overflow-y: visible;">
+      <div id="RFDisplayFrame" class="divDisplayFrame" style="visibility:hidden; border-width:medium; width:402px; height:auto; display:none; position:absolute; z-index:100; background-color:#ffffff;"></div>
+      <div style="position:relative;">
+         <!-- Google Tag Manager -->
+         <script type="text/javascript" async="" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/insight.js"></script><script type="text/javascript" async="" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/conversion_async.js"></script><script type="text/javascript" async="" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/analytics.js"></script><script async="" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/gtm.js"></script><script>
+            window.dataLayer = window.dataLayer || [];
+            var optOut = localStorage.getItem('optOut');
+            
+            if ( optOut && 'true' === optOut ) {
+            	window.dataLayer.push({'tracking':'off'});
+            } else {
+            	window.dataLayer.push({'tracking':'on'});
+            }
+         </script>
+         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-MWVC8C');
+         </script>
+         <!-- End Google Tag Manager -->
+         <meta charset="UTF-8">
+         <meta class="swiftype" name="type" data-type="enum" content="Open Source Project">
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+         <link rel="icon" href="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/themes/hortonworks/images/favicon.ico" type="image/ico" sizes="16x16">
+         <link rel="profile" href="http://gmpg.org/xfn/11">
+         <title>Streaming Analytics Manager - Hortonworks</title>
+         <!-- This site is optimized with the Yoast SEO Premium plugin v5.6.1 - https://yoast.com/wordpress/plugins/seo/ -->
+         <link rel="canonical" href="https://hortonworks.com/open-source/streaming-analytics-manager/">
+         <meta property="og:type" content="article">
+         <meta property="og:title" content="Streaming Analytics Manager - Hortonworks">
+         <meta property="og:description" content="Hortonworks Streaming Analytics Manager is an open source tool used to design, develop, deploy and manage streaming analytics applications using a drag drop visualize paradigm. &nbsp;Now users can build streaming analytics applications that do event correlation, context enrichment, complex pattern matching, analytical aggregations and create alerts/notifications when insights are discovered.">
+         <meta property="og:url" content="https://hortonworks.com/open-source/streaming-analytics-manager/">
+         <meta property="og:site_name" content="Hortonworks">
+         <meta property="article:section" content="Streaming Analytics Manager">
+         <meta property="og:image" content="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/default-441X384.jpg">
+         <meta property="og:image:secure_url" content="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/default-441X384.jpg">
+         <meta name="twitter:card" content="summary_large_image">
+         <meta name="twitter:description" content="Hortonworks Streaming Analytics Manager is an open source tool used to design, develop, deploy and manage streaming analytics applications using a drag drop visualize paradigm. &nbsp;Now users can build streaming analytics applications that do event correlation, context enrichment, complex pattern matching, analytical aggregations and create alerts/notifications when insights are discovered.">
+         <meta name="twitter:title" content="Streaming Analytics Manager - Hortonworks">
+         <meta name="twitter:image" content="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/default-441X384.jpg">
+         <script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/hortonworks.com\/","name":"Hortonworks","potentialAction":{"@type":"SearchAction","target":"https:\/\/hortonworks.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+         <script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/hortonworks.com\/open-source\/streaming-analytics-manager\/","sameAs":[],"@id":"#organization","name":"Hortonworks","logo":"https:\/\/hortonworks.com\/wp-content\/uploads\/2016\/03\/HWX-RGB-full-w-tagline.png"}</script>
+         <!-- / Yoast SEO Premium plugin. -->
+         <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+         <link rel="dns-prefetch" href="https://s.w.org/">
+         <link rel="stylesheet" id="wp-block-library-css" href="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/style.css" type="text/css" media="all">
+         <link rel="stylesheet" id="googlefonts-css" href="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/css.css" type="text/css" media="all">
+         <link rel="stylesheet" id="hortonworks_css-css" href="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/default.css" type="text/css" media="all">
+         <script type="text/javascript" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/jquery.js"></script>
+         <link rel="https://api.w.org/" href="https://hortonworks.com/wp-json/">
+         <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://hortonworks.com/xmlrpc.php?rsd">
+         <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-includes/wlwmanifest.xml">
+         <link rel="shortlink" href="https://hortonworks.com/?p=95927">
+         <link rel="alternate" type="application/json+oembed" href="https://hortonworks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhortonworks.com%2Fopen-source%2Fstreaming-analytics-manager%2F">
+         <link rel="alternate" type="text/xml+oembed" href="https://hortonworks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhortonworks.com%2Fopen-source%2Fstreaming-analytics-manager%2F&amp;format=xml">
+         <script type="text/javascript">
+            var lang_preference = navigator.language || navigator.userLanguage || navigator.browserLanguage || navigator.systemLanguage;
+            var HLV = {
+            	'lang_preference'	: lang_preference.toLowerCase(),
+            	'lang_cookie'		: document.cookie.match(/^(.*;)? selected_language=[^;]+(.*)?$/),
+            	'lang_whitelist'	: {
+            		'fr-fr' : 'fr', 'fr'	: 'fr',
+            		'es-es' : 'es', 'es'	: 'es',
+            		'cn-zh' : 'zh', 'zh'	: 'zh',
+            		'it-it' : 'it', 'it'	: 'it',
+            		'kr-ko' : 'ko', 'ko'	: 'ko',
+            		'pt-br' : 'br', 'br'	: 'br',
+            		'de-de' : 'de', 'de'	: 'de',
+            		'ja-jp' : 'jp', 'ja'	: 'jp'
+            	}
+            };
+            
+            var curr_page_host_root = window.location.hostname.split('.')[0];
+            
+            if ( curr_page_host_root == 'hortonworks' && ! HLV.lang_cookie && HLV.lang_preference in HLV.lang_whitelist ) {
+            	var loc_code = HLV.lang_whitelist[ HLV.lang_preference ];
+            	var date = new Date();
+            	date.setTime(+ date + ( 365 * 86400000 ) );
+            
+            	document.cookie = "selected_language=" + loc_code + "; expires=" + date.toGMTString() + "; path=/" + "; domain=.hortonworks.com";
+            
+            	var curr_page_protocol = window.location.protocol;
+            	var curr_page_uri = window.location.pathname;
+            
+            	window.location.href = curr_page_protocol + '//' + loc_code + '.hortonworks.com' + curr_page_uri;
+            }
+         </script>
+         <link rel="alternate" href="https://hortonworks.com/open-source/streaming-analytics-manager/" hreflang="x-default">
+         <link rel="alternate" href="https://fr.hortonworks.com/open-source/streaming-analytics-manager/" hreflang="fr">
+         <link rel="alternate" href="https://es.hortonworks.com/open-source/streaming-analytics-manager/" hreflang="es">
+         <link rel="alternate" href="https://zh.hortonworks.com/open-source/streaming-analytics-manager/" hreflang="zh">
+         <link rel="alternate" href="https://it.hortonworks.com/open-source/streaming-analytics-manager/" hreflang="it">
+         <link rel="alternate" href="https://ko.hortonworks.com/open-source/streaming-analytics-manager/" hreflang="ko">
+         <link rel="alternate" href="https://br.hortonworks.com/open-source/streaming-analytics-manager/" hreflang="pt">
+         <link rel="alternate" href="https://de.hortonworks.com/open-source/streaming-analytics-manager/" hreflang="de">
+         <link rel="alternate" href="https://jp.hortonworks.com/open-source/streaming-analytics-manager/" hreflang="ja">
+         <link rel="icon" href="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/cropped-favicon521x512-70x70.png" sizes="32x32">
+         <link rel="icon" href="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/cropped-favicon521x512-300x300.png" sizes="192x192">
+         <link rel="apple-touch-icon-precomposed" href="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/cropped-favicon521x512-300x300.png">
+         <meta name="msapplication-TileImage" content="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/cropped-favicon521x512-300x300.png">
+         <!-- Google Tag Manager (noscript) -->
+         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWVC8C"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+         <!-- End Google Tag Manager (noscript) -->
+         <div class="search-overlay" data-swiftype-index="false">
+            <div class="wrapper">
+               <div class="search-box content-970" style="height: 1094px;">
+                  <form class="top-search" method="GET" action="https://hortonworks.com/search-results/">
+                     <div class="search-wrap">
+                        <img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/search-overlay.png" alt="Search">
+                        <input type="text" name="stq" class="top-search-input st-default-search-input" placeholder="what would you like to search for?" autocomplete="off">
+                        <button type="submit" class="form-btn" value="search">search</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <button class="f-close-btn">
+            +
+            </button>
+            <div class="overlay-elephant-logo"><img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/logo1_002.png" alt="Facebook"></div>
+         </div>
+         <div class="footer-overlay" data-swiftype-index="false" style="height: 1094px;">
+            <div class="wrapper">
+               <div class="footer-expand-menu" style="height: 1004px;">
+                  <div class="f-menu-holder">
+                     <div class="f-menu-sub-holder">
+                        <div class="two-up-col">
+                           <ul class="f-main-menu f-arrow-menu">
+                              <li>
+                                 <a href="https://hortonworks.com/products/">products</a>
+                                 <ul class="f-sub-menu col-two">
+                                    <li class="f-mbl-link">
+                                       <a href="https://hortonworks.com/products/">overview  </a>
+                                    </li>
+                                    <li class="f-sub-head">
+                                       <a href="https://hortonworks.com/products/data-platforms/">Data Platforms</a>
+                                    </li>
+                                    <li><a href="https://hortonworks.com/products/data-platforms/hdp/">Data Platform (HDP)</a></li>
+                                    <li><a href="https://hortonworks.com/products/data-platforms/hdf/">DataFlow (HDF)</a></li>
+                                    <li>
+                                       <a href="https://hortonworks.com/products/data-platforms/cloud/">Cloud Platforms</a>
+                                    </li>
+                                    <li><a href="https://hortonworks.com/products/data-platforms/cybersecurity/">Cybersecurity Platform</a></li>
+                                    <li><a href="https://hortonworks.com/products/partner-solutions/data-science/">Data Science</a></li>
+                                    <li><a href="https://hortonworks.com/products/partner-solutions/ibm-db2-bigsql/">Advanced SQL</a></li>
+                                    <li class="f-sub-head">
+                                       <a href="https://hortonworks.com/products/sandbox/">Sandbox</a>
+                                    </li>
+                                    <li><a href="https://hortonworks.com/products/sandbox/#downloads">Overview</a></li>
+                                    <li><a href="https://hortonworks.com/tutorials/">Tutorials</a></li>
+                                    <li><a href="https://hortonworks.com/downloads/#sandbox">Sandbox Download</a></li>
+                                 </ul>
+                                 <ul class="f-sub-menu col-two">
+                                    <li class="f-sub-head">
+                                       <a href="">Data Services</a>
+                                    </li>
+                                    <li><a href="https://hortonworks.com/products/data-platforms/dataplane/">DataPlane Service</a></li>
+                                    <li><a href="https://hortonworks.com/products/data-platforms/dataplane/data-lifecycle-manager/">Data Lifecycle Manager</a></li>
+                                    <li><a href="https://hortonworks.com/products/data-platforms/dataplane/data-steward-studio/">Data Steward Studio</a></li>
+                                    <li class="f-sub-head">
+                                       <a href="">Subscriptions</a>
+                                    </li>
+                                    <li><a href="">Jumpstart</a></li>
+                                    <li><a href="">Enterprise</a></li>
+                                    <li><a href="">Premier</a></li>
+                                    <li><a href="">SmartSense</a></li>
+                                    <li class="f-sub-head">
+                                       <a href="https://hortonworks.com/downloads/">Software Download</a>
+                                    </li>
+                                    <li><a href="https://hortonworks.com/downloads/#sandbox">Sandbox Download</a></li>
+                                    <li><a href="https://hortonworks.com/downloads/#data-platform">HDP Download</a></li>
+                                    <li><a href="https://hortonworks.com/downloads/#dataflow">HDF Download</a></li>
+                                    <li><a href="http://docs.hortonworks.com/" target="_blank">Documentation</a></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="two-up-col">
+                           <ul class="f-main-menu f-arrow-menu">
+                              <li>
+                                 <a href="https://hortonworks.com/solutions/">Solutions</a>
+                                 <ul class="f-sub-menu col-two">
+                                    <li class="f-mbl-link">
+                                       <a href="https://hortonworks.com/solutions/">overview</a>
+                                    </li>
+                                    <li class="f-sub-head white-text">
+                                       <a href="https://hortonworks.com/solutions/#solutions-industry">By Industry</a>
+                                    </li>
+                                    <li><a href="https://hortonworks.com/solutions/advertising/">Advertising</a></li>
+                                    <li><a href="https://hortonworks.com/solutions/financial-services/">Financial Services</a></li>
+                                    <li><a href="https://hortonworks.com/solutions/healthcare/">Healthcare</a></li>
+                                    <li><a href="https://hortonworks.com/solutions/insurance/">Insurance</a></li>
+                                    <li><a href="https://hortonworks.com/solutions/manufacturing/">Manufacturing</a></li>
+                                    <li><a href="https://hortonworks.com/solutions/oil-gas/">Oil &amp; Gas</a></li>
+                                    <li><a href="https://hortonworks.com/solutions/pharmaceuticals/">Pharmaceuticals</a></li>
+                                    <li><a href="https://hortonworks.com/solutions/public-sector/">Public Sector</a></li>
+                                    <li><a href="https://hortonworks.com/solutions/retail/">Retail</a></li>
+                                    <li><a href="https://hortonworks.com/solutions/telecommunications/">Telecommunications</a></li>
+                                    <li><a href="https://hortonworks.com/solutions/energy/">Energy</a></li>
+                                 </ul>
+                                 <ul class="f-sub-menu col-two">
+                                    <li class="f-sub-head white-text">
+                                       <a href="https://hortonworks.com/solutions/#use-cases">By Use Case</a>
+                                    </li>
+                                    <li><a href="https://hortonworks.com/solutions/data-science-machine-learning/">Data Science / Machine Learning</a></li>
+                                    <li><a href="https://hortonworks.com/solutions/edw-optimization/">Enterprise Data Warehouse</a></li>
+                                    <li><a href="https://hortonworks.com/solutions/predictive-analytics/">Predictive Analytics</a></li>
+                                    <li><a href="https://hortonworks.com/solutions/security-and-governance/">Security and Governance</a></li>
+                                    <li><a href="https://hortonworks.com/solutions/single-view-customer/">Single View</a></li>
+                                    <li><a href="https://hortonworks.com/solutions/iot-streaming/">Streaming Analytics and IoT</a></li>
+                                    <li><a href="https://hortonworks.com/solutions/big-data-success/">Ensuring Big Data Success</a></li>
+                                    <li><a href="https://hortonworks.com/solutions/big-data-journey/">Big Data Journey</a></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div style="clear: both"></div>
+                     <div class="two-up-col">
+                        <ul class="f-main-menu f-arrow-menu">
+                           <li>
+                              <a href="https://hortonworks.com/services/">Services &amp; Support</a>
+                              <ul class="f-sub-menu col-two">
+                                 <li class="f-sub-head">
+                                    <a href="https://hortonworks.com/services/training/certification/">SUPPORT</a>
+                                 </li>
+                                 <li><a href="https://hortonworks.com/services/support/enterprise/">Enterprise</a></li>
+                                 <li><a href="https://hortonworks.com/services/support/flex/">Flex</a></li>
+                                 <li><a href="https://hortonworks.com/services/support/premier/">Premier</a></li>
+                                 <li><a href="https://hortonworks.com/services/support/smartsense/">SmartSense</a></li>
+                                 <li><a href="https://community.hortonworks.com/" target="_blank">Community Connection</a></li>
+                                 <li><a href="https://hortonworks.com/developers/">Developers</a></li>
+                                 <li class="f-sub-head">
+                                    <a href="https://hortonworks.com/services/training/self-paced-learning-library/">PROFESSIONAL SERVICES</a>
+                                 </li>
+                                 <li><a href="https://hortonworks.com/services/professional/#implementation">Implementation</a></li>
+                                 <li><a href="https://hortonworks.com/services/professional/#advisory">Advisory</a></li>
+                                 <li><a href="https://hortonworks.com/services/professional/#managed-services">Managed Services</a></li>
+                              </ul>
+                              <ul class="f-sub-menu col-two">
+                                 <li class="f-sub-head">
+                                    <a href="https://hortonworks.com/services/training/#training-page">TRAINING</a>
+                                 </li>
+                                 <li><a href="https://hortonworks.com/services/training/certification/">Certification</a></li>
+                                 <li><a href="https://hortonworks.com/services/training/self-paced-learning-library/">Self-Paced Learning</a></li>
+                                 <li><a href="https://hortonworks.com/services/training/#training-page">Classroom Training</a></li>
+                                 <li><a href="https://hortonworks.com/services/training/university-academic-program/">Academic Training</a></li>
+                                 <li class="f-sub-head">
+                                    <a href="https://hortonworks.com/services/training/university-academic-program/">GET STARTED</a>
+                                 </li>
+                                 <li><a href="https://hortonworks.com/get-started/big-data-scorecard/">Big Data Maturity Survey</a></li>
+                                 <li><a href="https://hortonworks.com/get-started/smartsense-roi-calculator/survey/">SmartSense ROI Calculator</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="two-up-col">
+                        <ul class="f-main-menu">
+                           <li><a href="https://www.cloudera.com/about.html">About</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="single-col absolute">
+                        <ul class="f-side-menu">
+                           <li><a href="https://hortonworks.com/customers/">Customers</a></li>
+                           <li><a href="https://hortonworks.com/services/professional/">Services</a></li>
+                           <li><a href="" class="trigger-top-form">Get Started </a></li>
+                           <li><a href="https://hortonworks.com/developers/">Developers</a></li>
+                           <li><a href="https://community.hortonworks.com/" target="_blank">Community</a></li>
+                           <li><a href="https://hortonworks.com/partners/">Partners</a></li>
+                           <li><a href="https://hortonworks.com/ecosystems/">Ecosystem</a></li>
+                           <li><a href="https://hortonworks.com/news-blogs/">News and Blogs</a></li>
+                           <li><a href="https://hortonworks.com/resource-center/">Resource Center</a></li>
+                           <li><a href="https://hortonworks.com/events-webcasts/">Events &amp; Webcasts</a></li>
+                           <li><a href="https://hortonworks.com/careers/">Careers</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="f-black-bar">
+               <div class="wrapper">
+                  <div class="lic-number">
+                     <ul>
+                        <li><a href="tel:+14086750983">1.408.675.0983</a></li>
+                        <li><a href="tel:+18558HORTON">1.855.8.HORTON</a></li>
+                     </ul>
+                  </div>
+                  <div class="media-part">
+                     <ul>
+                        <li class="grey-bg select-list">
+                           <select>
+                              <option>English</option>
+                              <option selected="selected">English</option>
+                              <option>german</option>
+                              <option>spanish</option>
+                           </select>
+                           <div class="selected">
+                              <div class="v-middle-wrapper">
+                                 <div class="v-middle-inner">
+                                    <div class="v-middle text-left">
+                                       <p>English</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <ul class="options text-left grey-bg">
+                              <li>
+                                 <p>English</p>
+                              </li>
+                              <li>
+                                 <p>English</p>
+                              </li>
+                              <li>
+                                 <p>german</p>
+                              </li>
+                              <li>
+                                 <p>spanish</p>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="grey-bg">
+                           <a href="https://in.linkedin.com/company/hortonworks" target="_blank"><img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/linkedin-dark-lg.png" alt="linkedin"></a>
+                        </li>
+                        <li class="grey-bg">
+                           <a href="https://www.facebook.com/hortonworks" target="_blank"><img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/fb-dark-lg.png" alt="Facebook"></a>
+                        </li>
+                        <li class="grey-bg">
+                           <a href="https://twitter.com/hortonworks" target="_blank"><img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/tweeter-dark-lg.png" alt="Tweeter"></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <button class="f-close-btn">
+            +
+            </button>
+            <div class="overlay-elephant-logo"><img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/logo1_002.png" alt="Facebook"></div>
+         </div>
+         <div class="newsletter-overlay" data-swiftype-index="false">
+            <div class="wrapper">
+               <div class="nws-box content-970" style="height: 1094px;">
+                  <div>
+                     <img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/mail.svg" alt="newsletter">
+                     <h2>Get fresh updates from Hortonworks by email</h2>
+                     <p>Once a month, receive latest insights, trends, analytics information and knowledge of Big Data.</p>
+                     <div class="ib-anchor">
+                        <p class="in-between">AVAILABLE NEWSLETTERS:</p>
+                     </div>
+                     <form id="mktoForm_523" class="marketo-form-embed nws-search uid_5d6851d3bec98 bf_form_init" method="post" bf_offer_id="1652955912">
+                        <div class="nws-wrap">
+                           <img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/newsletter-overlay.png" alt="newsletter"><input class="customMktoField validate[required,custom[email]] top-search-input" type="email" name="Email" id="Email" maxlength="255" placeholder="Enter your email">
+                           <div><label for="subscriptionGenNewsletter"></label><input class="customMktoField  " type="checkbox" name="subscriptionGenNewsletter" id="subscriptionGenNewsletter" value="yes" checked="checked"><label for="subscriptionGenNewsletter"></label></div>
+                           <p style="margin-left: 15px;">General Newsletter</p>
+                           <div><label for="subscriptionDevNewsletter"></label><input class="customMktoField  " type="checkbox" name="subscriptionDevNewsletter" id="subscriptionDevNewsletter" value="yes"><label for="subscriptionDevNewsletter"></label></div>
+                           <p style="margin-left: 15px;">Developer Newsletter</p>
+                           <input class="customMktoField  " type="hidden" name="utmcampaign" id="utmcampaign" maxlength="255" value="null"><input class="customMktoField  " type="hidden" name="utmmedium" id="utmmedium" maxlength="255" value=""><input class="customMktoField  " type="hidden" name="utmsource" id="utmsource" maxlength="255" value=""><input type="hidden" class="customMktoField hidden" id="formVid" name="formVid" value="523"><input type="hidden" class="customMktoField hidden" id="munchkinId" name="munchkinId" value="549-QAL-086"><input type="hidden" class="customMktoField hidden" id="formid" name="formid" value="523"><input type="hidden" class="unique_identifier customMktoField hidden" value="5d6851d3bec98">
+                           <div class="marketo-optin-prompt marketo_field col" style="margin-top: 20px;">
+                              <div class="optinlabel" style="font-size:80%;">* I understand I can unsubscribe at any time. I also acknowledge the additional information found in <a href="https://hortonworks.com/privacy-policy/" target="_blank">Hortonworks Privacy Policy</a>.</div>
+                           </div>
+                           <button id="submit" class="nws-btn">submit</button>
+                        </div>
+                     </form>
+                     <div class="success_message nws-search" style="display: none;">
+                        <p style="color: white; text-align: center; font-size: 22px;">Thank you for subscribing!</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <button class="f-close-btn">
+            +
+            </button>
+            <div class="overlay-elephant-logo"><img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/logo1_002.png" alt="Facebook"></div>
+         </div>
+         <div class="developer-newsletter-overlay" data-swiftype-index="false">
+            <div class="wrapper">
+               <div class="nws-box content-970" style="height: 1094px;">
+                  <div>
+                     <h2>Sign up for the Developers Newsletter</h2>
+                     <p>Once a month, receive latest insights, trends, analytics information and knowledge of Big Data.</p>
+                     <div class="developer-newsletter-signup">
+                        <form id="mktoForm_1849" class="marketo-form-embed uid_5d6851d3c1f90 bf_form_init" method="post" bf_offer_id="298087590">
+                           <div class="marketo_field Email email col"><input class="customMktoField validate[required,custom[email]] " type="email" name="Email" id="Email" maxlength="255"><label class="placeholder" for="Email">Email</label></div>
+                           <div class="marketo_field mostRecentLeadSourceL hidden col"><input class="customMktoField  " type="hidden" name="mostRecentLeadSourceL" id="mostRecentLeadSourceL" maxlength="255" value="Content"></div>
+                           <div class="marketo_field LeadSource hidden col"><input class="customMktoField  " type="hidden" name="LeadSource" id="LeadSource" maxlength="255" value="Newsletter"></div>
+                           <div class="marketo_field rFSITECompany hidden col"><input class="customMktoField  " type="hidden" name="rFSITECompany" id="rFSITECompany" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITEAddr1 hidden col"><input class="customMktoField  " type="hidden" name="rFSITEAddr1" id="rFSITEAddr1" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITEAddr2 hidden col"><input class="customMktoField  " type="hidden" name="rFSITEAddr2" id="rFSITEAddr2" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITECity hidden col"><input class="customMktoField  " type="hidden" name="rFSITECity" id="rFSITECity" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITEState hidden col"><input class="customMktoField  " type="hidden" name="rFSITEState" id="rFSITEState" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITECountry hidden col"><input class="customMktoField  " type="hidden" name="rFSITECountry" id="rFSITECountry" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITEZip hidden col"><input class="customMktoField  " type="hidden" name="rFSITEZip" id="rFSITEZip" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITEPhone hidden col"><input class="customMktoField  " type="hidden" name="rFSITEPhone" id="rFSITEPhone" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITETradeName hidden col"><input class="customMktoField  " type="hidden" name="rFSITETradeName" id="rFSITETradeName" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITEURL hidden col"><input class="customMktoField  " type="hidden" name="rFSITEURL" id="rFSITEURL" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITELocationType hidden col"><input class="customMktoField  " type="hidden" name="rFSITELocationType" id="rFSITELocationType" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITESubCode hidden col"><input class="customMktoField  " type="hidden" name="rFSITESubCode" id="rFSITESubCode" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITESICCode hidden col"><input class="customMktoField  " type="hidden" name="rFSITESICCode" id="rFSITESICCode" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITESicName hidden col"><input class="customMktoField  " type="hidden" name="rFSITESicName" id="rFSITESicName" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITENAICCode hidden col"><input class="customMktoField  " type="hidden" name="rFSITENAICCode" id="rFSITENAICCode" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITENAICSName hidden col"><input class="customMktoField  " type="hidden" name="rFSITENAICSName" id="rFSITENAICSName" maxlength="255" value=""></div>
+                           <div class="marketo_field rFgeoIPareacode hidden col"><input class="customMktoField  " type="hidden" name="rFgeoIPareacode" id="rFgeoIPareacode" maxlength="" value=""></div>
+                           <div class="marketo_field rFgeoIPcity hidden col"><input class="customMktoField  " type="hidden" name="rFgeoIPcity" id="rFgeoIPcity" maxlength="255" value=""></div>
+                           <div class="marketo_field rFgeoIPstate hidden col"><input class="customMktoField  " type="hidden" name="rFgeoIPstate" id="rFgeoIPstate" maxlength="255" value=""></div>
+                           <div class="marketo_field rFgeoIPcountry hidden col"><input class="customMktoField  " type="hidden" name="rFgeoIPcountry" id="rFgeoIPcountry" maxlength="255" value=""></div>
+                           <div class="marketo_field rFConfidenceLevel hidden col"><input class="customMktoField  " type="hidden" name="rFConfidenceLevel" id="rFConfidenceLevel" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQCompany hidden col"><input class="customMktoField  " type="hidden" name="rFHQCompany" id="rFHQCompany" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQAddr1 hidden col"><input class="customMktoField  " type="hidden" name="rFHQAddr1" id="rFHQAddr1" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQAddr2 hidden col"><input class="customMktoField  " type="hidden" name="rFHQAddr2" id="rFHQAddr2" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQCity hidden col"><input class="customMktoField  " type="hidden" name="rFHQCity" id="rFHQCity" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQState hidden col"><input class="customMktoField  " type="hidden" name="rFHQState" id="rFHQState" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQCountry hidden col"><input class="customMktoField  " type="hidden" name="rFHQCountry" id="rFHQCountry" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQZip hidden col"><input class="customMktoField  " type="hidden" name="rFHQZip" id="rFHQZip" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQPhone hidden col"><input class="customMktoField  " type="hidden" name="rFHQPhone" id="rFHQPhone" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQTradeName hidden col"><input class="customMktoField  " type="hidden" name="rFHQTradeName" id="rFHQTradeName" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQURL hidden col"><input class="customMktoField  " type="hidden" name="rFHQURL" id="rFHQURL" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQLocationType hidden col"><input class="customMktoField  " type="hidden" name="rFHQLocationType" id="rFHQLocationType" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQSubCode hidden col"><input class="customMktoField  " type="hidden" name="rFHQSubCode" id="rFHQSubCode" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQSICCode hidden col"><input class="customMktoField  " type="hidden" name="rFHQSICCode" id="rFHQSICCode" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQSicName hidden col"><input class="customMktoField  " type="hidden" name="rFHQSicName" id="rFHQSicName" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQNAICCode hidden col"><input class="customMktoField  " type="hidden" name="rFHQNAICCode" id="rFHQNAICCode" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQNAICSName hidden col"><input class="customMktoField  " type="hidden" name="rFHQNAICSName" id="rFHQNAICSName" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQCompany hidden col"><input class="customMktoField  " type="hidden" name="rFDHQCompany" id="rFDHQCompany" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQAddr1 hidden col"><input class="customMktoField  " type="hidden" name="rFDHQAddr1" id="rFDHQAddr1" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQAddr2 hidden col"><input class="customMktoField  " type="hidden" name="rFDHQAddr2" id="rFDHQAddr2" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQCity hidden col"><input class="customMktoField  " type="hidden" name="rFDHQCity" id="rFDHQCity" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQState hidden col"><input class="customMktoField  " type="hidden" name="rFDHQState" id="rFDHQState" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQCountry hidden col"><input class="customMktoField  " type="hidden" name="rFDHQCountry" id="rFDHQCountry" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQZip hidden col"><input class="customMktoField  " type="hidden" name="rFDHQZip" id="rFDHQZip" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQPhone hidden col"><input class="customMktoField  " type="hidden" name="rFDHQPhone" id="rFDHQPhone" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQTradeName hidden col"><input class="customMktoField  " type="hidden" name="rFDHQTradeName" id="rFDHQTradeName" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQURL hidden col"><input class="customMktoField  " type="hidden" name="rFDHQURL" id="rFDHQURL" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQLocationType hidden col"><input class="customMktoField  " type="hidden" name="rFDHQLocationType" id="rFDHQLocationType" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQSubCode hidden col"><input class="customMktoField  " type="hidden" name="rFDHQSubCode" id="rFDHQSubCode" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQSicName hidden col"><input class="customMktoField  " type="hidden" name="rFDHQSicName" id="rFDHQSicName" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQSICCode hidden col"><input class="customMktoField  " type="hidden" name="rFDHQSICCode" id="rFDHQSICCode" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQNAICCode hidden col"><input class="customMktoField  " type="hidden" name="rFDHQNAICCode" id="rFDHQNAICCode" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQNAICSName hidden col"><input class="customMktoField  " type="hidden" name="rFDHQNAICSName" id="rFDHQNAICSName" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQAnnualRev hidden col"><input class="customMktoField  " type="hidden" name="rFDHQAnnualRev" id="rFDHQAnnualRev" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQIndustry hidden col"><input class="customMktoField  " type="hidden" name="rFDHQIndustry" id="rFDHQIndustry" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITEIndustry hidden col"><input class="customMktoField  " type="hidden" name="rFSITEIndustry" id="rFSITEIndustry" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQIndustry hidden col"><input class="customMktoField  " type="hidden" name="rFHQIndustry" id="rFHQIndustry" maxlength="255" value=""></div>
+                           <div class="marketo_field inferredState hidden col"><input class="customMktoField  " type="hidden" name="inferredState" id="inferredState" maxlength="255" value=""></div>
+                           <div class="marketo_field InferredCountry hidden col"><input class="customMktoField  " type="hidden" name="InferredCountry" id="InferredCountry" maxlength="255" value=""></div>
+                           <div class="marketo_field Inferred_Industry__c hidden col"><input class="customMktoField  " type="hidden" name="Inferred_Industry__c" id="Inferred_Industry__c" maxlength="255" value=""></div>
+                           <div class="marketo_field InferredCompany hidden col"><input class="customMktoField  " type="hidden" name="InferredCompany" id="InferredCompany" maxlength="255" value=""></div>
+                           <div class="marketo_field utmcampaign hidden col"><input class="customMktoField  " type="hidden" name="utmcampaign" id="utmcampaign" maxlength="255" value="null"></div>
+                           <div class="marketo_field utmsource hidden col"><input class="customMktoField  " type="hidden" name="utmsource" id="utmsource" maxlength="255" value="null"></div>
+                           <div class="marketo_field utmcontent hidden col"><input class="customMktoField  " type="hidden" name="utmcontent" id="utmcontent" maxlength="255" value="null"></div>
+                           <div class="marketo_field utmmedium hidden col"><input class="customMktoField  " type="hidden" name="utmmedium" id="utmmedium" maxlength="255" value="null"></div>
+                           <div class="marketo_field rFDHQEmplyeesHere hidden col"><input class="customMktoField  " type="hidden" name="rFDHQEmplyeesHere" id="rFDHQEmplyeesHere" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQEmplyeesTotal hidden col"><input class="customMktoField  " type="hidden" name="rFDHQEmplyeesTotal" id="rFDHQEmplyeesTotal" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQEmplyeesHere hidden col"><input class="customMktoField  " type="hidden" name="rFHQEmplyeesHere" id="rFHQEmplyeesHere" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQEmplyeesTotal hidden col"><input class="customMktoField  " type="hidden" name="rFHQEmplyeesTotal" id="rFHQEmplyeesTotal" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITEEmplyeesHere hidden col"><input class="customMktoField  " type="hidden" name="rFSITEEmplyeesHere" id="rFSITEEmplyeesHere" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITEEmplyeesTotal hidden col"><input class="customMktoField  " type="hidden" name="rFSITEEmplyeesTotal" id="rFSITEEmplyeesTotal" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITEAnnualRev hidden col"><input class="customMktoField  " type="hidden" name="rFSITEAnnualRev" id="rFSITEAnnualRev" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQAnnualRev hidden col"><input class="customMktoField  " type="hidden" name="rFHQAnnualRev" id="rFHQAnnualRev" maxlength="255" value=""></div>
+                           <div class="marketo_field Lead_Source_Detail__c hidden col"><input class="customMktoField  " type="hidden" name="Lead_Source_Detail__c" id="Lead_Source_Detail__c" maxlength="255" value="Developer Newsletter Sign UP"></div>
+                           <input type="hidden" class="customMktoField hidden" id="formVid" name="formVid" value="1849"><input type="hidden" class="customMktoField hidden" id="munchkinId" name="munchkinId" value="549-QAL-086"><input type="hidden" class="customMktoField hidden" id="formid" name="formid" value="1849"><input type="hidden" class="unique_identifier customMktoField hidden" value="5d6851d3c1f90">
+                           <div class="marketo-optin-prompt marketo_field col" style="margin-top: 20px;">
+                              <div class="optinlabel" style="font-size:80%;">* I understand I can unsubscribe at any time. I also acknowledge the additional information found in <a href="https://hortonworks.com/privacy-policy/" target="_blank">Hortonworks Privacy Policy</a>.</div>
+                           </div>
+                           <div id="mkto_submit"><button id="submit" class="button-default button-orange">Sign-up</button></div>
+                        </form>
+                        <div class="success_message" style="display: none;">
+                           <p>Thank you for subscribing!</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <button class="f-close-btn">
+            +
+            </button>
+            <div class="overlay-elephant-logo"><img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/logo1_002.png" alt="Facebook"></div>
+         </div>
+         <div class="hw-overlay" data-swiftype-index="false">
+            <div class="top-form-container">
+               <a href="#" class="close-btn">
+               <span></span>
+               </a>
+               <div class="top-form">
+                  <section class="cta-block no-padding">
+                     <div class="bg-img">
+                        <img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/top-form-bg.png" alt="cta" style="width: 1400px; left: -186px; max-width: inherit;">
+                     </div>
+                     <div class="v-middle-wrapper">
+                        <div class="v-middle-inner">
+                           <div class="v-middle">
+                              <p class="h1-substitute">Get Started</p>
+                              <div class="cta-content">
+                                 <span>
+                                 <img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/i-cloud.png" alt="cloud">  
+                                 </span>
+                                 <p>Ready to Get Started?</p>
+                              </div>
+                              <a class="button-default" href="https://hortonworks.com/downloads/#sandbox">Download sandbox</a> 
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+                  <section class="contact-links">
+                     <div class="wrapper">
+                        <div class="col-four text-center">
+                           <div class="text-center">
+                              <img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/contact-icon.png" alt="contact icon">
+                           </div>
+                           <p class="contact-link">Contact Us:</p>
+                           <a class="phone learn-more" href="tel:+14086750983">1.408.675.0983</a>
+                        </div>
+                        <div class="col-four text-center">
+                           <div class="text-center">
+                              <img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/HCC_Website_Icon-01.png" alt="chat icon">
+                           </div>
+                           <p class="contact-link">Hortonworks Community</p>
+                           <a href="https://community.hortonworks.com/index.html" class="learn-more">Get Answers</a>
+                           <!-- a href="" class="learn-more">Chat Now</a -->
+                           <!--a id="liveagent_button_online_573E00000000Ikg" href="#" onclick="liveagent.startChat('573E00000000Ikg')" src="https://hortonworks-community.force.com/partners/resource/1431465059000/Chat_Online_button" class="learn-more">Chat Now</a>
+                              <a id="liveagent_button_offline_573E00000000Ikg" href="#" class="learn-more">Currently offline</a -->
+                           <!-- a href="#" class="learn-more">Currently offline</a -->
+                        </div>
+                        <div class="col-four text-center">
+                           <div class="text-center">
+                              <img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/big-data-icon.png" alt="big data">
+                           </div>
+                           <p class="contact-link">Score with Big Data</p>
+                           <a href="https://hortonworks.com/get-started/big-data-scorecard/" class="learn-more">Get my score</a>
+                        </div>
+                        <div class="col-four text-center">
+                           <div class="text-center">
+                              <img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/energy_icon.png" alt="SmartSense">
+                           </div>
+                           <p class="contact-link">Save with SmartSense</p>
+                           <a href="https://hortonworks.com/get-started/smartsense-roi-calculator/survey/" class="learn-more">Calculate My Savings</a>
+                        </div>
+                     </div>
+                  </section>
+                  <section class="contact-form grey-bg">
+                     <div class="wrapper">
+                        <h2 class="text-center">How can we help you?</h2>
+                        <form id="mktoForm_228" class="marketo-form-embed uid_5d6851d3c2733 bf_form_init" method="post" bf_offer_id="1652953034">
+                           <div class="row">
+                              <div class="marketo_field FirstName string col-two"><input class="customMktoField validate[required] " type="text" name="FirstName" id="FirstName" maxlength="255"><label class="placeholder" for="FirstName">First Name</label></div>
+                              <div class="marketo_field LastName string col-two"><input class="customMktoField validate[required] " type="text" name="LastName" id="LastName" maxlength="255"><label class="placeholder" for="LastName">Last Name</label></div>
+                           </div>
+                           <div class="row">
+                              <div class="marketo_field Email email col-two"><input class="customMktoField validate[required,custom[email]] " type="email" name="Email" id="Email" maxlength="255"><label class="placeholder" for="Email">Email Address</label></div>
+                              <div class="marketo_field Phone string col-two"><input class="customMktoField validate[required] " type="text" name="Phone" id="Phone" maxlength="255"><label class="placeholder" for="Phone">Phone Number</label></div>
+                           </div>
+                           <div class="row">
+                              <div class="marketo_field Company string col-two"><input class="customMktoField validate[required]  reachforced" type="text" name="Company" id="Company" maxlength="255" autocomplete="off"><label class="placeholder" for="Company">Company Name</label></div>
+                              <div class="marketo_field select-box Primary_Interest__c picklist col-two">
+                                 <label class="placeHolder" for="Primary_Interest__c">Primary Interest</label>
+                                 <select class="customMktoField validate[required]  selectmenu select2-hidden-accessible" name="Primary_Interest__c" id="Primary_Interest__c" placeholder="Primary Interest" tabindex="-1" aria-hidden="true">
+                                    <option value="" selected="selected"></option>
+                                    <option value="Contact Sales">Contact Sales</option>
+                                    <option value="Technical Support">Technical Support</option>
+                                    <option value="Training Sales">Training Sales</option>
+                                    <option value="Consulting">Consulting</option>
+                                    <option value="Partnership">Partnership</option>
+                                    <option value="Press or Analyst Inquiry">Press or Analyst Inquiry</option>
+                                    <option value="Website Feedback">Website Feedback</option>
+                                    <option value="Other">Other</option>
+                                 </select>
+                                 <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-Primary_Interest__c-container"><span class="select2-selection__rendered" id="select2-Primary_Interest__c-container"><span class="select2-selection__placeholder">Primary Interest</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="marketo_field contactUsURL hidden col col-padded"><input class="customMktoField  " type="hidden" name="contactUsURL" id="contactUsURL" maxlength="255" value="https://hortonworks.com/open-source/streaming-analytics-manager"></div>
+                              <div class="marketo_field Lead_Comment__c textarea col"><textarea class="customMktoField  " name="Lead_Comment__c" id="Lead_Comment__c" maxlength="1000"></textarea><label class="placeholder" for="Lead_Comment__c">What is Your Question or Comment?</label></div>
+                           </div>
+                           <div class="marketo_field Website hidden col"><input class="customMktoField  " type="hidden" name="Website" id="Website" maxlength="255" value=""></div>
+                           <div class="marketo_field Industry hidden col"><input class="customMktoField  " type="hidden" name="Industry" id="Industry" maxlength="255" value=""></div>
+                           <div class="marketo_field subIndustry hidden col"><input class="customMktoField  " type="hidden" name="subIndustry" id="subIndustry" maxlength="255" value=""></div>
+                           <div class="marketo_field NumberOfEmployees hidden col"><input class="customMktoField  " type="hidden" name="NumberOfEmployees" id="NumberOfEmployees" maxlength="" value=""></div>
+                           <div class="marketo_field numberofEmployeesRange hidden col"><input class="customMktoField  " type="hidden" name="numberofEmployeesRange" id="numberofEmployeesRange" maxlength="255" value=""></div>
+                           <div class="marketo_field AnnualRevenue hidden col"><input class="customMktoField  " type="hidden" name="AnnualRevenue" id="AnnualRevenue" maxlength="" value=""></div>
+                           <div class="marketo_field annualRevenueRange hidden col"><input class="customMktoField  " type="hidden" name="annualRevenueRange" id="annualRevenueRange" maxlength="255" value=""></div>
+                           <div class="marketo_field State hidden col"><input class="customMktoField  " type="hidden" name="State" id="State" maxlength="3" value=""></div>
+                           <div class="marketo_field City hidden col"><input class="customMktoField  " type="hidden" name="City" id="City" maxlength="255" value=""></div>
+                           <div class="marketo_field Street hidden col"><input class="customMktoField  " type="hidden" name="Street" id="Street" maxlength="2000" value=""></div>
+                           <div class="marketo_field PostalCode hidden col"><input class="customMktoField  " type="hidden" name="PostalCode" id="PostalCode" maxlength="255" value=""></div>
+                           <div class="marketo_field InferredCompany hidden col"><input class="customMktoField  " type="hidden" name="InferredCompany" id="InferredCompany" maxlength="255" value=""></div>
+                           <div class="marketo_field InferredCountry hidden col"><input class="customMktoField  " type="hidden" name="InferredCountry" id="InferredCountry" maxlength="255" value=""></div>
+                           <div class="marketo_field inferredState hidden col"><input class="customMktoField  " type="hidden" name="inferredState" id="inferredState" maxlength="255" value=""></div>
+                           <div class="marketo_field Country hidden col"><input class="customMktoField  " type="hidden" name="Country" id="Country" maxlength="255" value=""></div>
+                           <div class="marketo_field Inferred_Industry__c hidden col"><input class="customMktoField  " type="hidden" name="Inferred_Industry__c" id="Inferred_Industry__c" maxlength="255" value=""></div>
+                           <div class="marketo_field LeadSource hidden col"><input class="customMktoField  " type="hidden" name="LeadSource" id="LeadSource" maxlength="255" value="Website - Contact Us"></div>
+                           <div class="marketo_field mostRecentLeadSourceL hidden col"><input class="customMktoField  " type="hidden" name="mostRecentLeadSourceL" id="mostRecentLeadSourceL" maxlength="255" value="Website - Contact Us"></div>
+                           <div class="marketo_field Lead_Source_Detail__c hidden col"><input class="customMktoField  " type="hidden" name="Lead_Source_Detail__c" id="Lead_Source_Detail__c" maxlength="255" value="Website - Contact us"></div>
+                           <div class="marketo_field rFSITECompany hidden col"><input class="customMktoField  " type="hidden" name="rFSITECompany" id="rFSITECompany" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITEAddr1 hidden col"><input class="customMktoField  " type="hidden" name="rFSITEAddr1" id="rFSITEAddr1" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITEAddr2 hidden col"><input class="customMktoField  " type="hidden" name="rFSITEAddr2" id="rFSITEAddr2" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITECity hidden col"><input class="customMktoField  " type="hidden" name="rFSITECity" id="rFSITECity" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITEState hidden col"><input class="customMktoField  " type="hidden" name="rFSITEState" id="rFSITEState" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITECountry hidden col"><input class="customMktoField  " type="hidden" name="rFSITECountry" id="rFSITECountry" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITEZip hidden col"><input class="customMktoField  " type="hidden" name="rFSITEZip" id="rFSITEZip" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITEPhone hidden col"><input class="customMktoField  " type="hidden" name="rFSITEPhone" id="rFSITEPhone" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITETradeName hidden col"><input class="customMktoField  " type="hidden" name="rFSITETradeName" id="rFSITETradeName" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITEURL hidden col"><input class="customMktoField  " type="hidden" name="rFSITEURL" id="rFSITEURL" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITELocationType hidden col"><input class="customMktoField  " type="hidden" name="rFSITELocationType" id="rFSITELocationType" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITESubCode hidden col"><input class="customMktoField  " type="hidden" name="rFSITESubCode" id="rFSITESubCode" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITESICCode hidden col"><input class="customMktoField  " type="hidden" name="rFSITESICCode" id="rFSITESICCode" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITESicName hidden col"><input class="customMktoField  " type="hidden" name="rFSITESicName" id="rFSITESicName" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITENAICCode hidden col"><input class="customMktoField  " type="hidden" name="rFSITENAICCode" id="rFSITENAICCode" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITENAICSName hidden col"><input class="customMktoField  " type="hidden" name="rFSITENAICSName" id="rFSITENAICSName" maxlength="255" value=""></div>
+                           <div class="marketo_field rFgeoIPareacode hidden col"><input class="customMktoField  " type="hidden" name="rFgeoIPareacode" id="rFgeoIPareacode" maxlength="" value=""></div>
+                           <div class="marketo_field rFgeoIPcity hidden col"><input class="customMktoField  " type="hidden" name="rFgeoIPcity" id="rFgeoIPcity" maxlength="255" value=""></div>
+                           <div class="marketo_field rFgeoIPstate hidden col"><input class="customMktoField  " type="hidden" name="rFgeoIPstate" id="rFgeoIPstate" maxlength="255" value=""></div>
+                           <div class="marketo_field rFgeoIPcountry hidden col"><input class="customMktoField  " type="hidden" name="rFgeoIPcountry" id="rFgeoIPcountry" maxlength="255" value=""></div>
+                           <div class="marketo_field rFConfidenceLevel hidden col"><input class="customMktoField  " type="hidden" name="rFConfidenceLevel" id="rFConfidenceLevel" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQCompany hidden col"><input class="customMktoField  " type="hidden" name="rFHQCompany" id="rFHQCompany" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQAddr1 hidden col"><input class="customMktoField  " type="hidden" name="rFHQAddr1" id="rFHQAddr1" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQAddr2 hidden col"><input class="customMktoField  " type="hidden" name="rFHQAddr2" id="rFHQAddr2" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQCity hidden col"><input class="customMktoField  " type="hidden" name="rFHQCity" id="rFHQCity" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQState hidden col"><input class="customMktoField  " type="hidden" name="rFHQState" id="rFHQState" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQCountry hidden col"><input class="customMktoField  " type="hidden" name="rFHQCountry" id="rFHQCountry" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQZip hidden col"><input class="customMktoField  " type="hidden" name="rFHQZip" id="rFHQZip" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQPhone hidden col"><input class="customMktoField  " type="hidden" name="rFHQPhone" id="rFHQPhone" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQTradeName hidden col"><input class="customMktoField  " type="hidden" name="rFHQTradeName" id="rFHQTradeName" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQURL hidden col"><input class="customMktoField  " type="hidden" name="rFHQURL" id="rFHQURL" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQLocationType hidden col"><input class="customMktoField  " type="hidden" name="rFHQLocationType" id="rFHQLocationType" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQSubCode hidden col"><input class="customMktoField  " type="hidden" name="rFHQSubCode" id="rFHQSubCode" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQSICCode hidden col"><input class="customMktoField  " type="hidden" name="rFHQSICCode" id="rFHQSICCode" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQSicName hidden col"><input class="customMktoField  " type="hidden" name="rFHQSicName" id="rFHQSicName" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQNAICCode hidden col"><input class="customMktoField  " type="hidden" name="rFHQNAICCode" id="rFHQNAICCode" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQNAICSName hidden col"><input class="customMktoField  " type="hidden" name="rFHQNAICSName" id="rFHQNAICSName" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQCompany hidden col"><input class="customMktoField  " type="hidden" name="rFDHQCompany" id="rFDHQCompany" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQAddr1 hidden col"><input class="customMktoField  " type="hidden" name="rFDHQAddr1" id="rFDHQAddr1" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQAddr2 hidden col"><input class="customMktoField  " type="hidden" name="rFDHQAddr2" id="rFDHQAddr2" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQCity hidden col"><input class="customMktoField  " type="hidden" name="rFDHQCity" id="rFDHQCity" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQState hidden col"><input class="customMktoField  " type="hidden" name="rFDHQState" id="rFDHQState" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQCountry hidden col"><input class="customMktoField  " type="hidden" name="rFDHQCountry" id="rFDHQCountry" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQZip hidden col"><input class="customMktoField  " type="hidden" name="rFDHQZip" id="rFDHQZip" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQPhone hidden col"><input class="customMktoField  " type="hidden" name="rFDHQPhone" id="rFDHQPhone" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQTradeName hidden col"><input class="customMktoField  " type="hidden" name="rFDHQTradeName" id="rFDHQTradeName" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQURL hidden col"><input class="customMktoField  " type="hidden" name="rFDHQURL" id="rFDHQURL" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQLocationType hidden col"><input class="customMktoField  " type="hidden" name="rFDHQLocationType" id="rFDHQLocationType" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQSubCode hidden col"><input class="customMktoField  " type="hidden" name="rFDHQSubCode" id="rFDHQSubCode" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQSicName hidden col"><input class="customMktoField  " type="hidden" name="rFDHQSicName" id="rFDHQSicName" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQSICCode hidden col"><input class="customMktoField  " type="hidden" name="rFDHQSICCode" id="rFDHQSICCode" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQNAICCode hidden col"><input class="customMktoField  " type="hidden" name="rFDHQNAICCode" id="rFDHQNAICCode" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQNAICSName hidden col"><input class="customMktoField  " type="hidden" name="rFDHQNAICSName" id="rFDHQNAICSName" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQAnnualRev hidden col"><input class="customMktoField  " type="hidden" name="rFDHQAnnualRev" id="rFDHQAnnualRev" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQIndustry hidden col"><input class="customMktoField  " type="hidden" name="rFDHQIndustry" id="rFDHQIndustry" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITEIndustry hidden col"><input class="customMktoField  " type="hidden" name="rFSITEIndustry" id="rFSITEIndustry" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQIndustry hidden col"><input class="customMktoField  " type="hidden" name="rFHQIndustry" id="rFHQIndustry" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQEmplyeesHere hidden col"><input class="customMktoField  " type="hidden" name="rFDHQEmplyeesHere" id="rFDHQEmplyeesHere" maxlength="255" value=""></div>
+                           <div class="marketo_field rFDHQEmplyeesTotal hidden col"><input class="customMktoField  " type="hidden" name="rFDHQEmplyeesTotal" id="rFDHQEmplyeesTotal" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQEmplyeesHere hidden col"><input class="customMktoField  " type="hidden" name="rFHQEmplyeesHere" id="rFHQEmplyeesHere" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQEmplyeesTotal hidden col"><input class="customMktoField  " type="hidden" name="rFHQEmplyeesTotal" id="rFHQEmplyeesTotal" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITEEmplyeesHere hidden col"><input class="customMktoField  " type="hidden" name="rFSITEEmplyeesHere" id="rFSITEEmplyeesHere" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITEEmplyeesTotal hidden col"><input class="customMktoField  " type="hidden" name="rFSITEEmplyeesTotal" id="rFSITEEmplyeesTotal" maxlength="255" value=""></div>
+                           <div class="marketo_field rFSITEAnnualRev hidden col"><input class="customMktoField  " type="hidden" name="rFSITEAnnualRev" id="rFSITEAnnualRev" maxlength="255" value=""></div>
+                           <div class="marketo_field rFHQAnnualRev hidden col"><input class="customMktoField  " type="hidden" name="rFHQAnnualRev" id="rFHQAnnualRev" maxlength="255" value=""></div>
+                           <div class="row"></div>
+                           <input type="hidden" class="customMktoField hidden" id="formVid" name="formVid" value="228"><input type="hidden" class="customMktoField hidden" id="munchkinId" name="munchkinId" value="549-QAL-086"><input type="hidden" class="customMktoField hidden" id="formid" name="formid" value="228"><input type="hidden" class="unique_identifier customMktoField hidden" value="5d6851d3c2733">
+                           <div class="marketo-optin-prompt marketo_field col" style="margin-top: 20px;">
+                              <div class="optinlabel" style="font-size:80%;">* I understand I can unsubscribe at any time. I also acknowledge the additional information found in <a href="https://hortonworks.com/privacy-policy/" target="_blank">Hortonworks Privacy Policy</a>.</div>
+                           </div>
+                           <div id="mkto_submit"><button id="submit" class="button-default button-orange">Contact Us</button></div>
+                        </form>
+                        <div class="success_message" style="display: none;">
+                           <p>Thank you for contacting us.<br>Someone will be in touch shortly to discuss your Hortonworks needs.</p>
+                        </div>
+                     </div>
+                  </section>
+               </div>
+            </div>
+         </div>
+         <div class="hw-wrapper">
+            <div class="list-overlay" data-swiftype-index="false">
+               <span id="close-video" type="button" class="close-video">close<img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/overlay-close.png" alt="Close button"></span>
+               <div class="overlay-elephant-logo"><img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/logo1_002.png" alt="Facebook"></div>
+            </div>
+            <header data-swiftype-index="false">
+               <div class="top-navigation">
+                  <div class="wrapper">
+                     <ul class="top-menu">
+                        <li><a href="https://community.hortonworks.com/" target="_blank">Community</a></li>
+                        <li><a href="https://hortonworks.com/blog/">Blogs</a></li>
+                        <li><a href="https://hortonworks.com/partners/">Partners </a></li>
+                        <li><a href="https://hortonworks.com/contact-us/">Contact Us</a></li>
+                        <li><a href="https://support.hortonworks.com/">Support Login</a></li>
+                        <li id="desktop-lang-picker">
+                           <div class="language-form tool-form" id="desktop-lang-picker">
+                              <div class="statement">
+                                 <span class="icon-language"></span>				  
+                                 <div id="lang-selector">
+                                    <ul class="lang-menu" style="display: block;">
+                                       <li class="lang-trigger">
+                                          <a class="lang-trigger-link">								<span class="the-lang">English</span>								<img class="down-chevron dark" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/ui_language_chevron.svg">								<img class="down-chevron light" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/arrow-caret-down-white.png">								</a>							  	
+                                          <ul style="width: 160px; display: none;">
+                                             <li class="lang-item SL_opaque "><a class="lang-link" href="http://hortonworks.com/tutorial/sandbox-deployment-and-install-guide/section/4/" code="en-us">English</a></li>
+                                             <li class="lang-item"><a class="lang-link" href="http://fr.hortonworks.com/tutorial/sandbox-deployment-and-install-guide/section/4/" code="fr-fr">Français</a></li>
+                                             <li class="lang-item"><a class="lang-link" href="http://es.hortonworks.com/tutorial/sandbox-deployment-and-install-guide/section/4/" code="es-es">Español (España)</a></li>
+                                             <li class="lang-item"><a class="lang-link" href="http://zh.hortonworks.com/tutorial/sandbox-deployment-and-install-guide/section/4/" code="cn-zh">中文</a></li>
+                                             <li class="lang-item"><a class="lang-link" href="http://it.hortonworks.com/tutorial/sandbox-deployment-and-install-guide/section/4/" code="it-it">Italiano</a></li>
+                                             <li class="lang-item"><a class="lang-link" href="http://ko.hortonworks.com/tutorial/sandbox-deployment-and-install-guide/section/4/" code="kr-ko">한국어</a></li>
+                                             <li class="lang-item"><a class="lang-link" href="http://br.hortonworks.com/tutorial/sandbox-deployment-and-install-guide/section/4/" code="pt-br">Português (Brasil)</a></li>
+                                             <li class="lang-item"><a class="lang-link" href="http://de.hortonworks.com/tutorial/sandbox-deployment-and-install-guide/section/4/" code="de-de">Deutsch</a></li>
+                                             <li class="lang-item"><a class="lang-link" href="http://jp.hortonworks.com/tutorial/sandbox-deployment-and-install-guide/section/4/" code="ja-jp">日本語</a></li>
+                                          </ul>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="search-in-header">
+                           <div class="search-cover">
+                              <form action="https://www.cloudera.com/search.html.html?q=" method="GET">
+                                 <input type="text" name="q" class="search-on-cldr">
+                              </form>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div id="mobile-search-box">
+                  <div class="search-in-header">
+                     <div class="search-cover">
+                        <form action="https://www.cloudera.com/search.html.html?q=" method="GET">
+                           <input type="text" name="q" class="search-on-cldr">
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               <div id="mobile-lang-picker">
+                  <div class="language-form tool-form" id="desktop-lang-picker">
+                     <div class="statement">
+                        <span class="icon-language"></span>				  
+                        <div id="lang-selector">
+                           <ul class="lang-menu" style="display: block;">
+                              <li class="lang-trigger">
+                                 <a class="lang-trigger-link">								<span class="the-lang">English</span>								<img class="down-chevron dark" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/ui_language_chevron.svg">								<img class="down-chevron light" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/arrow-caret-down-white.png">								</a>							  	
+                                 <ul style="width: 100%; display: none;">
+                                    <li class="lang-item SL_opaque "><a class="lang-link" href="http://hortonworks.com/tutorial/sandbox-deployment-and-install-guide/section/4/" code="en-us">English</a></li>
+                                    <li class="lang-item"><a class="lang-link" href="http://fr.hortonworks.com/tutorial/sandbox-deployment-and-install-guide/section/4/" code="fr-fr">Français</a></li>
+                                    <li class="lang-item"><a class="lang-link" href="http://es.hortonworks.com/tutorial/sandbox-deployment-and-install-guide/section/4/" code="es-es">Español (España)</a></li>
+                                    <li class="lang-item"><a class="lang-link" href="http://zh.hortonworks.com/tutorial/sandbox-deployment-and-install-guide/section/4/" code="cn-zh">中文</a></li>
+                                    <li class="lang-item"><a class="lang-link" href="http://it.hortonworks.com/tutorial/sandbox-deployment-and-install-guide/section/4/" code="it-it">Italiano</a></li>
+                                    <li class="lang-item"><a class="lang-link" href="http://ko.hortonworks.com/tutorial/sandbox-deployment-and-install-guide/section/4/" code="kr-ko">한국어</a></li>
+                                    <li class="lang-item"><a class="lang-link" href="http://br.hortonworks.com/tutorial/sandbox-deployment-and-install-guide/section/4/" code="pt-br">Português (Brasil)</a></li>
+                                    <li class="lang-item"><a class="lang-link" href="http://de.hortonworks.com/tutorial/sandbox-deployment-and-install-guide/section/4/" code="de-de">Deutsch</a></li>
+                                    <li class="lang-item"><a class="lang-link" href="http://jp.hortonworks.com/tutorial/sandbox-deployment-and-install-guide/section/4/" code="ja-jp">日本語</a></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="main-navigation" style="height: 85px;">
+                  <div class="main-nav off-canvas">
+                     <div class="wrapper">
+                        <div class="logo">
+                           <a href="https://hortonworks.com/"><img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/ui_logo.svg" alt="Logo"></a>
+                        </div>
+                        <nav>
+                           <div class="toggle">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                           </div>
+                           <div class="menu-wrapper argle" style="height: auto; display: block;">
+                              <ul class="main-menu">
+                                 <li class="products-menu arrow-menu">
+                                    <span class="drop-menu-cat" data-link-url="https://hortonworks.com/products/">Products</span>
+                                    <div class="drop-menu">
+                                       <div class="wrapper">
+                                          <div class="col-five menu-column">
+                                             <ul>
+                                                <li class="mobile-link"><a href="https://hortonworks.com/products/data-platforms/">Overview</a>
+                                                </li>
+                                                <li class="submenu-head">
+                                                   <a href="https://hortonworks.com/products/data-platforms/">Hybrid Data Platforms</a>
+                                                   <div class="submenu green-left">
+                                                      <ul class="eual-height">
+                                                         <li><a href="https://hortonworks.com/products/data-platforms/hdp/">Data Platform (HDP)</a></li>
+                                                         <li><a href="https://hortonworks.com/products/data-platforms/hdf/">DataFlow (HDF)</a></li>
+                                                         <li><a href="https://hortonworks.com/products/data-platforms/dataplane/">DataPlane </a></li>
+                                                         <li><a href="https://hortonworks.com/products/data-platforms/cybersecurity/">Cybersecurity</a></li>
+                                                         <li><a href="https://hortonworks.com/products/data-platforms/cloud/">Cloud</a></li>
+                                                      </ul>
+                                                   </div>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                          <div class="col-five menu-column">
+                                             <ul>
+                                                <li class="mobile-link"><a href="https://hortonworks.com/products/data-platforms/dataplane/">Overview</a></li>
+                                                <li class="submenu-head">
+                                                   <a href="https://hortonworks.com/products/dataplane-applications/">DataPlane Applications</a>
+                                                   <div class="submenu green-left">
+                                                      <ul class="eual-height">
+                                                         <li><a href="https://hortonworks.com/products/data-platforms/dataplane/data-lifecycle-manager/">Data Lifecycle Manager</a></li>
+                                                         <li><a href="https://hortonworks.com/products/data-platforms/dataplane/data-steward-studio/">Data Steward Studio</a></li>
+                                                         <li><a href="https://hortonworks.com/products/data-platforms/dataplane/data-analytics-studio/">Data Analytics Studio</a></li>
+                                                         <li><a href="https://hortonworks.com/products/data-platforms/dataplane/streams-messaging-manager/">Streams Messaging Manager</a></li>
+                                                      </ul>
+                                                   </div>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                          <div class="col-five menu-column">
+                                             <ul>
+                                                <li class="mobile-link"><a href="https://hortonworks.com/products/partner-solutions/">Overview</a></li>
+                                                <li class="submenu-head">
+                                                   <a href="https://hortonworks.com/products/partner-solutions/">Partner Solutions</a>
+                                                   <div class="submenu green-left">
+                                                      <ul class="eual-height">
+                                                         <li><a href="https://hortonworks.com/products/partner-solutions/data-science/">Data Science</a></li>
+                                                         <li><a href="https://hortonworks.com/products/partner-solutions/ibm-db2-bigsql/">Advanced SQL</a></li>
+                                                      </ul>
+                                                   </div>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                          <div class="col-five menu-column">
+                                             <ul>
+                                                <li class="mobile-link"><a href="https://hortonworks.com/products/sandbox/">Overview</a></li>
+                                                <li class="submenu-head">
+                                                   <a href="https://hortonworks.com/products/sandbox/">Sandbox</a>
+                                                   <div class="submenu green-left">
+                                                      <ul class="eual-height">
+                                                         <li><a href="https://hortonworks.com/tutorials/">Tutorials</a></li>
+                                                         <li><a href="https://hortonworks.com/downloads/#sandbox">Sandbox Download</a></li>
+                                                      </ul>
+                                                   </div>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                          <div class="col-five menu-column">
+                                             <ul>
+                                                <li class="submenu-head">
+                                                   <a href="https://hortonworks.com/downloads/">Software Download</a>
+                                                   <div class="submenu green-left">
+                                                      <ul class="eual-height">
+                                                         <li><a href="https://hortonworks.com/downloads/#sandbox" class="nav-download" data-anchor-target="sandbox">Sandbox</a></li>
+                                                         <li><a href="https://hortonworks.com/downloads/#data-platform" class="nav-download" data-anchor-target="data-platform">HDP</a></li>
+                                                         <li><a href="https://hortonworks.com/downloads/#add-ons" class="nav-download" data-anchor-target="add-ons">HDP Add-Ons</a></li>
+                                                         <li><a href="https://hortonworks.com/downloads/#dataflow" class="nav-download" data-anchor-target="dataflow">HDF</a></li>
+                                                         <li><a href="http://docs.hortonworks.com/" target="_blank">Documentation</a></li>
+                                                      </ul>
+                                                   </div>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <li class="solutions-menu arrow-menu">
+                                    <span class="drop-menu-cat" data-link-url="https://hortonworks.com/solutions/">Solutions</span>
+                                    <div class="drop-menu">
+                                       <div class="wrapper">
+                                          <div class="col-two menu-column">
+                                             <ul>
+                                                <li class="submenu-head">
+                                                   <a href="https://hortonworks.com/solutions/#solutions-industry">By Industry</a>
+                                                   <div class="submenu green-left">
+                                                      <ul class="eual-height col-two">
+                                                         <li><a href="https://hortonworks.com/solutions/advertising/">Advertising</a></li>
+                                                         <li><a href="https://hortonworks.com/solutions/financial-services/">Financial Services</a></li>
+                                                         <li><a href="https://hortonworks.com/solutions/healthcare/">Healthcare</a></li>
+                                                         <li><a href="https://hortonworks.com/solutions/insurance/">Insurance</a></li>
+                                                         <li><a href="https://hortonworks.com/solutions/manufacturing/">Manufacturing</a></li>
+                                                         <li><a href="https://hortonworks.com/solutions/energy/">Energy</a></li>
+                                                      </ul>
+                                                      <ul class="eual-height col-two">
+                                                         <li><a href="https://hortonworks.com/solutions/oil-gas/">Oil &amp; Gas</a></li>
+                                                         <li><a href="https://hortonworks.com/solutions/pharmaceuticals/">Pharmaceuticals</a></li>
+                                                         <li><a href="https://hortonworks.com/solutions/public-sector/">Public Sector</a></li>
+                                                         <li><a href="https://hortonworks.com/solutions/retail/">Retail</a></li>
+                                                         <li><a href="https://hortonworks.com/solutions/telecommunications/">Communications</a></li>
+                                                      </ul>
+                                                   </div>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                          <div class="col-two menu-column">
+                                             <ul>
+                                                <li class="submenu-head">
+                                                   <a href="https://hortonworks.com/solutions/#use-cases">By Use Cases</a>
+                                                   <div class="submenu green-left">
+                                                      <ul class="eual-height col-two">
+                                                         <li><a href="https://hortonworks.com/solutions/data-science-machine-learning/">Data Science / Machine Learning</a></li>
+                                                         <li><a href="https://hortonworks.com/solutions/edw-optimization/">Enterprise Data Warehouse</a></li>
+                                                         <li><a href="https://hortonworks.com/solutions/predictive-analytics/">Predictive Analytics</a></li>
+                                                         <li><a href="https://hortonworks.com/solutions/security/">Security and Governance</a></li>
+                                                         <li><a href="https://hortonworks.com/solutions/gdpr-compliance/">GDPR Compliance</a></li>
+                                                      </ul>
+                                                      <ul class="eual-height col-two">
+                                                         <li><a href="https://hortonworks.com/solutions/single-view-customer/">Single View</a></li>
+                                                         <li><a href="https://hortonworks.com/solutions/iot-streaming/">IoT and Streaming</a></li>
+                                                         <li><a href="https://hortonworks.com/solutions/big-data-success/">Ensuring Big Data Success</a></li>
+                                                         <li><a href="https://hortonworks.com/solutions/big-data-journey/">Big Data Journey</a></li>
+                                                      </ul>
+                                                   </div>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <li class="customers-menu"><span class="drop-menu-cat" data-link-url="https://hortonworks.com/customers/">Customers</span></li>
+                                 <li class="services-menu arrow-menu">
+                                    <span class="drop-menu-cat" data-link-url="https://hortonworks.com/services/">Services &amp; Support</span>
+                                    <div class="drop-menu">
+                                       <div class="wrapper">
+                                          <div class="col-four menu-column">
+                                             <ul>
+                                                <li class="submenu-head">
+                                                   <a href="https://hortonworks.com/services/support/">Support</a>
+                                                   <div class="submenu green-left">
+                                                      <ul class="eual-height">
+                                                         <li><a href="https://hortonworks.com/services/support/enterprise/">Enterprise</a></li>
+                                                         <li><a href="https://hortonworks.com/services/support/flex/">Flex</a></li>
+                                                         <li><a href="https://hortonworks.com/services/support/premier/">Premier</a></li>
+                                                         <li><a href="https://community.hortonworks.com/" target="_blank">Community Connection</a></li>
+                                                         <li><a href="https://hortonworks.com/developers/">Developers</a></li>
+                                                      </ul>
+                                                   </div>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                          <div class="col-four menu-column">
+                                             <ul>
+                                                <li class="submenu-head">
+                                                   <a href="https://hortonworks.com/services/" class="">Subscription Services</a>
+                                                   <div class="submenu green-left">
+                                                      <ul class="eual-height">
+                                                         <li><a href="https://hortonworks.com/services/support/operational-services/">Operational Services</a></li>
+                                                         <li><a href="https://hortonworks.com/services/support/smartsense/">SmartSense</a></li>
+                                                      </ul>
+                                                   </div>
+                                                </li>
+                                                <li class="submenu-head"><a href="https://hortonworks.com/services/professional/">Professional Services</a></li>
+                                             </ul>
+                                          </div>
+                                          <div class="col-four menu-column">
+                                             <ul>
+                                                <li class="submenu-head">
+                                                   <a href="https://hortonworks.com/services/training/">Training</a>
+                                                   <div class="submenu green-left">
+                                                      <ul class="eual-height">
+                                                         <li><a href="https://hortonworks.com/services/training/">Overview</a></li>
+                                                         <li><a href="https://hortonworks.com/services/training/certification/">Certification</a></li>
+                                                         <li><a href="https://hortonworks.com/services/training/live-training/">Live Training</a></li>
+                                                         <li><a href="https://hortonworks.com/services/training/self-paced-learning-library/">Self-Paced Learning</a></li>
+                                                         <li><a href="https://hortonworks.com/services/training/university-academic-program/">Academic Training</a></li>
+                                                         <li><a href="https://hortonworks.com/services/training/hortonworks-university-blended-learning/">Blended Learning</a></li>
+                                                      </ul>
+                                                   </div>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                          <div class="col-four menu-column">
+                                             <ul>
+                                                <li class="submenu-head">
+                                                   <a href="https://hortonworks.com/services/" class="">Get Started</a>
+                                                   <div class="submenu" green-left="">
+                                                      <ul class="eual-height">
+                                                         <li><a href="https://hortonworks.com/get-started/big-data-scorecard/">Big Data Maturity Survey</a></li>
+                                                         <li><a href="https://hortonworks.com/get-started/smartsense-roi-calculator/survey/">SmartSense ROI Calculator</a></li>
+                                                      </ul>
+                                                   </div>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <li class="training-menu"><a href="https://www.cloudera.com/about.html" target="_blank">About</a></li>
+                                 <li class="mobile-only"><a href="https://community.hortonworks.com/" target="_blank">Community</a></li>
+                                 <li class="mobile-only"><a href="https://hortonworks.com/blog/">Blogs</a></li>
+                                 <li class="mobile-only"><a href="https://hortonworks.com/partners/">Partners </a></li>
+                                 <li class="mobile-only"><a href="https://hortonworks.com/contact-us/">Contact Us</a></li>
+                                 <li class="fix-search">
+                                    <div class="search-in-header">
+                                       <form action="https://hortonworks.com/search-results/">
+                                          <input type="text" name="stq" class="st-default-search-input" autocomplete="off">
+                                       </form>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </header>
+            <script>
+               jQuery( document ).ready( function( $ ) {
+               	// ================================================================================================
+               	// Tab System - Used to delineate sections as the HDP Pages, Sandbox Pages etc.
+               	// ================================================================================================
+               	function activateTab( $tab, $firstload ) {
+               		// First check to see if the tab system is in place!
+               		if ( $('.sectionnav.auto ul li').length === 0 ) {
+               			return false;
+               		}
+               
+               		if ( window.location.hash && $firstload ) {
+               
+               			$(window).load( function() {
+               				$(this).scrollTop(0);
+               			});
+               
+               			$tab = $('.sectionnav.auto ul li a[href="' + window.location.hash + '"]').parent();
+               			console.log(window.location.hash);
+               
+               			if ( $tab.length < 1 ) {
+               				$childtab = $('ul.tabs a[href="' + window.location.hash + '"]').parent();
+               				parentid = $childtab.closest( '.panel' ).attr('id');
+               
+               				$tab = $('.sectionnav.auto ul li a[href="#' + parentid + '"]').parent();
+               			}
+               			
+               		}
+               
+               		// $tab expects a jquery object in the sectionnav
+               		if ( $tab === void(0) || $tab.length < 1 ) {
+               			// On page load, there's no object, so choose the first tab.
+               			$tab = $('.sectionnav ul li:first-child');
+               		}
+               
+               		var $activeTab = $tab.closest('ul').find('li.active'),
+               			contentLocation = $tab.children('a').attr("href");
+               
+               		// Strip off the current url that IE adds
+               		contentLocation = contentLocation.replace(/^.+#/, '#');
+               
+               		//Make Tab Active
+               		$activeTab.removeClass('active');
+               		$tab.addClass('active');
+               
+               		//Show Tab Content
+               		$(contentLocation).closest('.panels').children('.panel').removeClass('active').hide();
+               		$(contentLocation).css('display', 'block').addClass('active');
+               
+               	}
+               	activateTab( void(0), true );
+               
+               	// Set up event Handlers for Tabs
+               	$( document ).on( 'click', '.sectionnav.auto li a', function ( event ) {
+               		if ( $(this).attr('href').indexOf('docs.hortonworks.com') == -1 ) { // exclude external link to docs
+               			event.preventDefault();
+               			history.pushState( null, null, $(this).attr('href') );
+               			activateTab( $( this ).parent('li'), false );
+               		}
+               	});
+               
+               	$('.innernav a').on('click', function(evt) {
+               		// Used for the Back/Forward buttons inside page sections, such as the tutorials.
+               		event.preventDefault();
+               		$('html, body').animate({ scrollTop: 0 }, 'fast');
+               		var next = $(this).attr('data-target');
+               		var newtab = $('.sectionnav.auto ul li a[href="#section_' + next + '"]').parent();
+               		activateTab(newtab, false);
+               ;
+               	});
+               
+               	$('.in-page-anchor').on('click', function(evt) {
+               		// Used for in-page anchor links that are not in the left nav (tabs).
+               		evt.preventDefault();
+               		var next = $(this).attr('href');
+               		var newtab = $('.sectionnav.auto ul li a[href="' + next + '"]').parent();
+               		history.pushState( null, null, $(this).attr('href') );
+               		activateTab(newtab, false);
+               		;
+               	});
+               });
+            </script>
+            <link rel="stylesheet" href="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/font-awesome.css">
+            <section class="apache-projects hero-second-level no-padding">
+               <div class="bg-img">
+                  <img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/Streaming-Analytics-manager-heroshot.jpg" alt="Open Source Projects" style="width: 1400px; left: -186px; max-width: inherit;">
+               </div>
+               <div class="v-middle-wrapper">
+                  <div class="v-middle-inner">
+                     <div class="v-middle">
+                        <div class="image-container">
+                           <img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/Streaming-analytics-manager-heroshot-logo-113x120.png" alt="Streaming Analytics Manager" width="113" height="120">				
+                        </div>
+                     </div>
+                     <div class="v-middle">
+                        <div class="v-middle">
+                           <h1>Streaming Analytics Manager</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <div class="apache-projects">
+               <div class="ps">
+                  <div class="gridx">
+                     <div class="responsive-menu-button"><i class="fa fa-arrow-circle-o-up"></i> MENU <i class="fa fa-arrow-circle-o-up"></i></div>
+                     <div class="col-four side-nav">
+                        <a href="https://hortonworks.com/ecosystems/" class="button-default button-green back-to-hdp" style="width:100%; margin-top: 0;">« BACK TO PROJECTS</a>
+                        <div class="sectionnav auto">
+                           <ul class="nodots wide">
+                              <li id="tab_1" class="active"><a href="#section_1">What Hortonworks Streaming Analytics Manager Does?</a></li>
+                              <li id="tab_2"><a href="#section_2">Hortonworks’ focus on Streaming Analytics Manager:</a></li>
+                              <li id="tab_tutorials"><a href="#tutorials">Streaming Tutorials</a></li>
+                              <li id="tab_webinars"><a href="#webinars">Webinars &amp; Presentations</a></li>
+                              <li id="tab_forums"><a href="#forums">Streaming Community</a></li>
+                              <li id="docs"><a href="https://docs.hortonworks.com/HDPDocuments/HDF3/HDF-3.0.0/bk_planning-your-deployment/content/ch_deployment-scenarios.html" target="_blank">Documentation</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-eight maincontent project-body">
+                        <div class="panels">
+                           <h2>OVERVIEW</h2>
+                           <div class="project_overview">
+                              <p>Hortonworks Streaming 
+                                 Analytics Manager is an open source tool used to design, develop, deploy
+                                 and manage streaming analytics applications using a drag drop visualize
+                                 paradigm. &nbsp;Now users can build streaming analytics applications 
+                                 that do event correlation, context enrichment, complex pattern matching,
+                                 analytical aggregations and create alerts/notifications when insights 
+                                 are discovered.
+                              </p>
+                           </div>
+                           <div class="panel active" id="section_1" style="display: block;">
+                              <div class="maincontent">
+                                 <h3>What Hortonworks Streaming Analytics Manager Does?</h3>
+                                 <p>Hortonworks
+                                    Streaming Analytics Manager provides immediate and continuous insights 
+                                    using aggregations over windows, pattern matching, predictive and 
+                                    prescriptive analytics. Streaming analytics applications can be built 
+                                    and deployed in minutes without writing any code.
+                                 </p>
+                                 <p><strong>Key features:</strong></p>
+                                 <p><a href="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/hortonworks-streaming-analytics-manager.png"><img class="aligncenter size-full wp-image-95998" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/hortonworks-streaming-analytics-manager.png" alt="" srcset="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/hortonworks-streaming-analytics-manager.png 1000w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/hortonworks-streaming-analytics-manager-150x116.png 150w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/hortonworks-streaming-analytics-manager-300x232.png 300w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/hortonworks-streaming-analytics-manager-70x54.png 70w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/hortonworks-streaming-analytics-manager-120x93.png 120w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/hortonworks-streaming-analytics-manager-450x348.png 450w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/hortonworks-streaming-analytics-manager-800x618.png 800w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/hortonworks-streaming-analytics-manager-600x464.png 600w" sizes="(max-width: 1000px) 100vw, 1000px" width="1000" height="773"></a></p>
+                                 <p>Below are step to step&nbsp;screen shots showcase how Hortonworks Steaming Analytics Manager&nbsp;works:</p>
+                                 <p>1- Step 1: Operations Create &nbsp;Service Pools and Environments</p>
+                                 <figure id="attachment_96044" aria-describedby="caption-attachment-96044" style="width: 1024px" class="wp-caption alignnone">
+                                    <img class="wp-image-96044 size-large" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/HDF-screen-shot-9-1024x461.png" alt="Create Service Pools and Environments" srcset="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-9-1024x461.png 1024w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-9-150x67.png 150w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-9-300x135.png 300w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-9-70x31.png 70w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-9-120x54.png 120w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-9-450x202.png 450w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-9-800x360.png 800w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-9-600x270.png 600w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-9.png 1398w" sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="461">
+                                    <figcaption id="caption-attachment-96044" class="wp-caption-text">Create Service Pools and Environments</figcaption>
+                                 </figure>
+                                 <figure id="attachment_96045" aria-describedby="caption-attachment-96045" style="width: 1562px" class="wp-caption alignnone">
+                                    <img class="wp-image-96045 size-full" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/HDF-screenshot-10.png" alt="HDF Environments" srcset="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screenshot-10.png 1562w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screenshot-10-150x81.png 150w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screenshot-10-300x163.png 300w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screenshot-10-1024x555.png 1024w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screenshot-10-70x38.png 70w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screenshot-10-120x65.png 120w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screenshot-10-450x244.png 450w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screenshot-10-800x434.png 800w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screenshot-10-600x325.png 600w" sizes="(max-width: 1562px) 100vw, 1562px" width="1562" height="847">
+                                    <figcaption id="caption-attachment-96045" class="wp-caption-text">HDF Environments</figcaption>
+                                 </figure>
+                                 <p>2- Step 2: App Developer builds the app using Stream Builder</p>
+                                 <p><a href="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/streaming-analytics-screen-shot-5.jpg"><img class="aligncenter size-full wp-image-95981" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/streaming-analytics-screen-shot-5.jpg" alt="" srcset="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/streaming-analytics-screen-shot-5.jpg 1000w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/streaming-analytics-screen-shot-5-150x88.jpg 150w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/streaming-analytics-screen-shot-5-300x177.jpg 300w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/streaming-analytics-screen-shot-5-70x41.jpg 70w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/streaming-analytics-screen-shot-5-120x71.jpg 120w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/streaming-analytics-screen-shot-5-450x265.jpg 450w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/streaming-analytics-screen-shot-5-800x471.jpg 800w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/streaming-analytics-screen-shot-5-600x353.jpg 600w" sizes="(max-width: 1000px) 100vw, 1000px" width="1000" height="589"></a></p>
+                                 <p>3- Step 3: App Developer and Operations monitors, and manages the the App via Stream Operations</p>
+                                 <figure id="attachment_96043" aria-describedby="caption-attachment-96043" style="width: 1528px" class="wp-caption alignnone">
+                                    <img class="wp-image-96043 size-full" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/HDF-screen-shot-8.png" alt="Manage streaming analytics manager" srcset="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-8.png 1528w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-8-150x119.png 150w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-8-300x237.png 300w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-8-1024x810.png 1024w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-8-70x55.png 70w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-8-120x95.png 120w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-8-450x356.png 450w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-8-800x633.png 800w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-8-600x475.png 600w" sizes="(max-width: 1528px) 100vw, 1528px" width="1528" height="1209">
+                                    <figcaption id="caption-attachment-96043" class="wp-caption-text">Manage streaming analytics manager</figcaption>
+                                 </figure>
+                                 <p>4- Step 4: App Developer and Operations manages the app in the My Applications View</p>
+                                 <p><img class="aligncenter size-full wp-image-95980" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/streaming-analytics-screen-shot-1.jpg" alt="" srcset="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/streaming-analytics-screen-shot-1.jpg 1494w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/streaming-analytics-screen-shot-1-150x84.jpg 150w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/streaming-analytics-screen-shot-1-300x168.jpg 300w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/streaming-analytics-screen-shot-1-1024x574.jpg 1024w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/streaming-analytics-screen-shot-1-70x39.jpg 70w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/streaming-analytics-screen-shot-1-120x67.jpg 120w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/streaming-analytics-screen-shot-1-450x252.jpg 450w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/streaming-analytics-screen-shot-1-800x448.jpg 800w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/streaming-analytics-screen-shot-1-600x336.jpg 600w" sizes="(max-width: 1494px) 100vw, 1494px" width="1494" height="837"></p>
+                                 <p>5- Step 5: Business analyst uses Stream Insight powered by Superset to do Descriptive Analytics on the Stream</p>
+                                 <p><a href="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-7.jpg"><img class="aligncenter size-full wp-image-96003" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/HDF-screen-shot-7.jpg" alt="" srcset="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-7.jpg 1000w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-7-150x140.jpg 150w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-7-300x280.jpg 300w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-7-70x65.jpg 70w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-7-120x112.jpg 120w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-7-450x419.jpg 450w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-7-800x746.jpg 800w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-7-600x559.jpg 600w" sizes="(max-width: 1000px) 100vw, 1000px" width="1000" height="932"></a></p>
+                                 <p>&nbsp;</p>
+                                 <p><a href="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-6.jpg"><img class="aligncenter size-full wp-image-96002" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/HDF-screen-shot-6.jpg" alt="" srcset="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-6.jpg 1389w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-6-150x133.jpg 150w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-6-300x267.jpg 300w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-6-1024x910.jpg 1024w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-6-70x62.jpg 70w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-6-120x107.jpg 120w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-6-450x400.jpg 450w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-6-800x711.jpg 800w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/HDF-screen-shot-6-600x533.jpg 600w" sizes="(max-width: 1389px) 100vw, 1389px" width="1389" height="1234"></a></p>
+                              </div>
+                           </div>
+                           <div class="panel" id="section_2" style="display: none;">
+                              <div class="maincontent">
+                                 <h3>Hortonworks’ focus on Streaming Analytics Manager:</h3>
+                                 <table style="height: 538px; margin: 10px auto;" width="Auto" cellspacing="5px" cellpadding="5px">
+                                    <tbody>
+                                       <tr>
+                                          <td colspan="2"><strong>Applications Developer – Build Quickly&nbsp;</strong><br>
+                                             Application Developers can easily design, develop, deploy and manage streaming analytics applications.
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td><a href="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/app-developer.png"><img class="aligncenter size-full wp-image-95955" style="box-shadow: none;" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/app-developer.png" alt="" srcset="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/app-developer.png 371w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/app-developer-150x150.png 150w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/app-developer-300x300.png 300w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/app-developer-70x70.png 70w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/app-developer-120x120.png 120w" sizes="(max-width: 371px) 100vw, 371px" width="371" height="371"></a></td>
+                                          <td style="padding-left: 15px;">
+                                             &nbsp;
+                                             <p></p>
+                                             <ul>
+                                                <li style="list-style: disc; background: none; padding-left: 0; margin-left: 10px;">Drag and drop to build a working streaming application without writing a single line of code</li>
+                                                <li style="list-style: disc; background: none; padding-left: 0; margin-left: 10px;">Key features including event correlation, context enrichment, complex pattern matching and alerts/notifications</li>
+                                                <li style="list-style: disc; background: none; padding-left: 0; margin-left: 10px;">Create
+                                                   input streams, applying complicated functions over windows, transforms,
+                                                   splitting/joining streams and persisting data/streams&nbsp;to 
+                                                   downstream systems
+                                                </li>
+                                             </ul>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td colspan="2"><strong>Business Analyst –&nbsp;Analyze Quickly</strong><br>
+                                             No more waiting! Business Analysts have prebuilt charts and analytical functions to quickly find insights in data-in-motion.
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td><a href="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/business-analyst.png"><img class="aligncenter size-full wp-image-95954" style="box-shadow: none;" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/business-analyst.png" alt="" srcset="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/business-analyst.png 371w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/business-analyst-150x150.png 150w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/business-analyst-300x300.png 300w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/business-analyst-70x70.png 70w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/business-analyst-120x120.png 120w" sizes="(max-width: 371px) 100vw, 371px" width="371" height="371"></a></td>
+                                          <td style="padding-left: 15px;">
+                                             &nbsp;
+                                             <p></p>
+                                             <ul>
+                                                <li style="list-style: disc; background: none; padding-left: 0; margin-left: 10px;">Analytics engine powered by Apache Druid, an open source data store designed for OLAP queries on event data</li>
+                                                <li style="list-style: disc; background: none; padding-left: 0; margin-left: 10px;">Rich visual dashboard with over 30 visualization charts right out of the box</li>
+                                                <li style="list-style: disc; background: none; padding-left: 0; margin-left: 10px;">Create/monitor/view the dashboard as near real-time data streaming in</li>
+                                             </ul>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td colspan="2"><strong>IT DevOps –&nbsp;Operate Efficiently</strong><br>
+                                             DevOps&nbsp;can use visual tools with prebuilt functions to easily 
+                                             manage and monitor or use powerful SDK to customize functions.
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td><a href="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/operations.png"><img class="aligncenter size-full wp-image-95953" style="box-shadow: none;" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/operations.png" alt="" srcset="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/operations.png 371w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/operations-150x150.png 150w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/operations-300x300.png 300w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/operations-70x70.png 70w, https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/operations-120x120.png 120w" sizes="(max-width: 371px) 100vw, 371px" width="371" height="371"></a></td>
+                                          <td style="padding-left: 15px;">
+                                             &nbsp;
+                                             <p></p>
+                                             <ul>
+                                                <li style="list-style: disc; background: none; padding-left: 0; margin-left: 10px;">Provides
+                                                   an environment in which Operations team can track the entire streaming 
+                                                   application lifecycle management from creation, modification, monitoring
+                                                   to sunset the application
+                                                </li>
+                                                <li style="list-style: disc; background: none; padding-left: 0; margin-left: 10px;">Create and manage service pools for developer to easily create streaming analytics apps</li>
+                                                <li style="list-style: disc; background: none; padding-left: 0; margin-left: 10px;">Easily
+                                                   deploy streaming analytics apps in a secure environment, shielding the 
+                                                   end user from the complexities of working with kerberized environments
+                                                </li>
+                                             </ul>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                           <div class="panel" id="forums" style="display: none;">
+                              <h2>Forums</h2>
+                              <div id="questionContainer" class="hdp-forum-container"></div>
+                              <script type="text/javascript" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/widgets.html"></script><script type="text/javascript">TeamHub.Questions("questionContainer", {"topics": "Streaming"});</script>
+                           </div>
+                           <div class="panel" id="tutorials" style="display: none;">
+                              <h2>Streaming Tutorials</h2>
+                              <div class="related tutorials">
+                                 <h3>Try these Tutorials</h3>
+                                 <ul class="related_tutorials">
+                                    <li>
+                                       <div class="title"><a href="https://hortonworks.com/tutorial/real-time-event-processing-in-nifi-sam-schema-registry-and-superset/">Real-Time Event Processing in NiFi, SAM, Schema Registry and SuperSet</a></div>
+                                       <div class="excerpt">
+                                          <p>Introduction
+                                             In this tutorial, you will learn how to deploy a modern real-time 
+                                             streaming application. This application serves as a reference framework 
+                                             for developing a big data pipeline, complete with a broad range of use 
+                                             cases and powerful reusable core components. You will explore the NiFi 
+                                             Dataflow application, Kafka topics, Schemas, SAM topology and visualize 
+                                             […]
+                                          </p>
+                                       </div>
+                                       <div class="tuts_type"></div>
+                                    </li>
+                                    <li>
+                                       <div class="title"><a href="https://hortonworks.com/tutorial/getting-started-with-hdf-sandbox/">Getting Started with the HDF Sandbox</a></div>
+                                       <div class="excerpt">
+                                          <p>Introduction
+                                             In this tutorial, you will learn how to deploy a modern real-time 
+                                             streaming application. This application serves as a reference framework 
+                                             for developing a big data pipeline, complete with a broad range of use 
+                                             cases and powerful reusable core components. You will explore the NiFi 
+                                             Dataflow application, Kafka topics, Schemas and SAM topology. 
+                                             Prerequisites […]
+                                          </p>
+                                       </div>
+                                       <div class="tuts_type"></div>
+                                    </li>
+                                    <li>
+                                       <div class="title"><a href="https://hortonworks.com/tutorial/sam-in-trucking-iot-on-hdf/">SAM in Trucking IoT on HDF</a></div>
+                                       <div class="excerpt">
+                                          <p>Introduction
+                                             This tutorial covers the core concepts of Streaming Analytics Manager 
+                                             (SAM) and the role it plays in an environment in which Stream processing
+                                             is important. We will create a SAM topology to ingest streams of data 
+                                             from Apache Kafka into our stream application, do some complex 
+                                             processing and store the data into Druid and […]
+                                          </p>
+                                       </div>
+                                       <div class="tuts_type"></div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="panel" id="webinars" style="display: none;">
+                              <h2>Webinars &amp; Presentations</h2>
+                              <div class="related webinars">
+                                 <h3>View Past Webinars</h3>
+                                 <div class="webinar">
+                                    <div class="icon"><a href="https://hortonworks.com/webinar/building-next-generation-streaming-analytics-application-within-10-min/"><img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/HDF-webinar-71217.jpg"></a></div>
+                                    <div class="details-container">
+                                       <div class="title"><a href="https://hortonworks.com/webinar/building-next-generation-streaming-analytics-application-within-10-min/">Building Next Generation Streaming Analytics Application – Within 10 Min</a></div>
+                                       <div class="desc">To
+                                          realize the full potential of modern data applications, organizations 
+                                          need to be able to capture perishable insights from data in motion. 
+                                          While flow management tools are available to help gather, route, filter 
+                                          and transform data from any source, companies have lacked equivalent 
+                                          tools for building the analytics apps needed to extract insight from 
+                                          streaming […]
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <section class="footer no-padding" data-swiftype-index="false">
+            <div class="footer-nav grey-bg fixed">
+               <div class="cookie-notice-wrap">
+                  <div class="cookie-notice wrapper">
+                     <p>This website uses cookies for analytics, personalisation and 
+                        advertising. To learn more or change your cookie settings, please read 
+                        our <a href="https://hortonworks.com/cookie-policy/" id="cookie-policy-link">Cookie Policy</a>. By continuing to browse, you agree to our use of cookies.
+                     </p>
+                     <a href="#" class="close" id="cookie-policy-close"><img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/green-circle-x.png"></a>
+                  </div>
+               </div>
+               <div class="wrapper">
+                  <div class="col-two">
+                     <div class="footer-menu">
+                        <div class="hamburger">
+                           <span></span>
+                           <span class="middle"></span>
+                           <span></span>
+                        </div>
+                        <p>MENU</p>
+                     </div>
+                     <div class="breadcrumb">
+                        <ul>
+                           <li><a href="https://hortonworks.com/open-source/streaming-analytics-manager/">open-source</a></li>
+                        </ul>
+                     </div>
+                     <div class="share">
+                        <p>Share</p>
+                        <ul>
+                           <li><a class="share_popup" href="https://www.linkedin.com/cws/share?url=https://hortonworks.com/open-source/streaming-analytics-manager/"><img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/linkedin-dark.png" alt="Linked in"></a></li>
+                           <li><a class="share_popup" href="https://www.facebook.com/sharer/sharer.php?u=https://hortonworks.com/open-source/streaming-analytics-manager/"><img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/fb-dark.png" alt="Facebook"></a></li>
+                           <li><a class="share_popup" href="https://twitter.com/share?text=Streaming+Analytics+Manager+-+Hortonworks&amp;url=https://hortonworks.com/open-source/streaming-analytics-manager/&amp;via=Hortonworks"><img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/tweeter-dark.png" alt="Tweeter"></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-two">
+                     <div class="newsletter">
+                        <p>Sign-up</p>
+                        <a href="https://hortonworks.com/open-source/streaming-analytics-manager/"><img class="nws-dark" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/mail-dark.png" alt="Newsletter"><img class="nws-white" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/mail-white.png" alt="Newsletter"></a>
+                     </div>
+                     <div class="questions">
+                        <a style="display:none;" href="#" id="liveagent_button_online_573E00000000Ikg_footer" onclick="liveagent.startChat('573E00000000Ikg')">
+                           <p>Have questions? &nbsp;&nbsp;</p>
+                           <img style="margin-top:5px;" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/message-dark.png" alt="Message">
+                        </a>
+                        <a href="https://hortonworks.com/contact-sales" id="liveagent_button_offline_573E00000000Ikg_footer">
+                           <p>Contact Sales? &nbsp;&nbsp;</p>
+                           <img style="margin-top:5px;" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/ui-footer-questions.svg" alt="Contact Sales">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-wht" style="margin-top: 0px;">
+               <div class="wrapper">
+                  <div class="sub-nav">
+                     <div class="nav-menus">
+                        <ul>
+                           <li><a href="https://hortonworks.com/ecosystems/" class="learn-more">Ecosystem</a></li>
+                           <li><a href="https://hortonworks.com/press-room/" class="learn-more">Press Room</a></li>
+                           <li><a href="https://hortonworks.com/resource-center/" class="learn-more">Resource Center </a></li>
+                           <li><a href="https://hortonworks.com/events/" class="learn-more">Events</a></li>
+                           <li><a href="https://hortonworks.com/webinars/" class="learn-more">Webinars</a></li>
+                           <li><a href="https://hortonworks.com/newsletters/" class="learn-more">Newsletters</a></li>
+                           <li><a href="https://hortonworks.com/careers/" class="learn-more">Careers</a></li>
+                        </ul>
+                     </div>
+                     <div class="lic-number">
+                        <ul>
+                           <li><a class="black-text" href="tel:+14086750983">1.408.675.0983</a></li>
+                           <li><a class="black-text" href="tel:+18558467866">1.855.8.HORTON</a></li>
+                           <li><a class="black-text" href="tel:+4402038261405">44 (0) 20 3826 1405</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="trademarks">
+                     <div class="content-part">
+                        <p>Apache, Hadoop, Falcon, Atlas, Tez, Sqoop, Flume,
+                           Kafka, Pig, Hive, HBase, Accumulo, Storm, Solr, Spark, Ranger, Knox, 
+                           Ambari, ZooKeeper, Oozie, Phoenix, NiFi, Nifi Registry, HAWQ, Zeppelin, 
+                           Slider, Mahout, MapReduce, HDFS, YARN, Metron and the Hadoop elephant 
+                           and Apache project logos are either registered trademarks or trademarks 
+                           of the&nbsp;<a href="http://www.apache.org/" target="_blank">Apache Software Foundation</a> in the United States or other countries.
+                        </p>
+                     </div>
+                     <div class="media-part">
+                        <ul>
+                           <li class="grey-bg">
+                              <a href="http://www.linkedin.com/company/hortonworks" target="_blank"><img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/linkedin-dark-lg.png" alt="linkedin"></a>
+                           </li>
+                           <li class="grey-bg">
+                              <a href="http://facebook.com/hortonworks/" target="_blank"><img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/fb-dark-lg.png" alt="Facebook"></a>
+                           </li>
+                           <li class="grey-bg">
+                              <a href="http://twitter.com/hortonworks/" target="_blank"><img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/tweeter-dark-lg.png" alt="Tweeter"></a>
+                           </li>
+                           <li class="grey-bg">
+                              <a href="http://youtube.com/hortonworks/" target="_blank"><img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/youtube-icon.png" alt="youtube"></a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-dark">
+               <div class="copyright">
+                  <p>© 2011-2018 Hortonworks Inc. All Rights Reserved.</p>
+               </div>
+               <div class="policy-terms">
+                  <ul>
+                     <li><a href="https://hortonworks.com/privacy-policy/">Privacy Policy</a></li>
+                     <li><a href="https://hortonworks.com/terms-of-service/">Terms of Service</a></li>
+                     <li><a href="https://hortonworks.com/cookie-policy/">Cookie Policy</a></li>
+                     <li><a href="https://hortonworks.com/lca/">LCA Postings</a></li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <!-- Smartling Language Detector -->
+         <script type="text/javascript">
+            //var smtId = "1b5fd90c4";
+            //var smtDefaultStyles = false; /* set to false to use your own css */
+            //var smtRedirect = true;
+            //var smtProt = (("https:" == document.location.protocol) ? "https://" : "http://");
+            //document.write(unescape("%3Cscript src='" + smtProt + "cdn01.smartling.com/ls/" + smtId + ".js' type='text/javascript'%3E%3C/script%3E"));
+            
+            jQuery(document).ready(function($) {
+                var flag_url = "/wp-content/themes/hortonworks/images/svg/flags/";
+            
+                // Get the current page domain to determine if you are on a localized page
+                var curr_page_host = window.location.hostname;
+                var curr_page_host_arr = curr_page_host.split('.');
+                var curr_page_lang = curr_page_host_arr[0];
+            
+                var curr_page_protocol = window.location.protocol;
+                var curr_page_uri = window.location.pathname;
+            
+                if (curr_page_lang != 'hortonworks' && curr_page_lang != 'dev') {
+                    $('.lang-link').each(function(index) {
+                        var code = $(this).attr('code');
+                        var loc_code = code.split('-')[1];
+                        if ( loc_code == curr_page_lang ) {
+                            $('.the-lang').html($(this).html());
+                            $('.lang-trigger .lang-trigger-flag').attr('src', flag_url + loc_code + '.svg');
+                            return false;
+                        }
+                    });
+                } else {
+                    //Check if needs redirect which is only if they are loading the english page but have selected a language in the past
+                    var lang_cookie = $.cookie('selected_language');
+                    if ( lang_cookie && lang_cookie != '' ) {
+                        if (lang_cookie != 'en-us'){
+                            var lang_cookie_arr = lang_cookie.split('-');
+                            var loc_code = '';
+                            if ( 1 in lang_cookie_arr ) {
+                                loc_code = lang_cookie_arr[1] + ".";
+                            } else {
+                                loc_code = lang_cookie_arr[0] + ".";
+                            }
+            
+                            window.location.href = curr_page_protocol + '//' + loc_code + 'hortonworks.com' + curr_page_uri;
+                        }
+                    }
+                }
+            }); // end document ready
+            
+            
+            
+            // Event handlers for the language drop-down
+            jQuery('.lang-trigger-link').on('click', function( $ ) {
+                jQuery('.lang-trigger ul').toggle();
+            });
+            jQuery('.lang-link').on('click', function( $ ) {
+                var code = jQuery(this).attr('code');
+                jQuery.cookie('selected_language', code, { expires : 365, path : '/', domain: '.hortonworks.com' });
+            });
+            
+         </script>
+         <script type="text/javascript">var mktoEE = {"5d6851d3bec98":true,"5d6851d3c1f90":true,"5d6851d3c2733":true};</script>		
+         <div id="slide-in-form-container">
+            <div class="slider_bg"></div>
+            <div id="slide-in-form-inner-container">
+               <div id="HMUCG_slider_container" class="slide-in-form-content">
+                  <div id="slide-closer"><img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/green-circle-x.png"></div>
+               </div>
+            </div>
+         </div>
+         <script type="text/html" id="tmpl-search-result">
+            <div class='item-cell collapsed {{{data.is_featured}}}' >
+            	<div class="featured-msg {{{data.is_featured}}}"></div>
+            	<div class='img-container'>
+            		<img class='cell-image' src='{{{data.post_image}}}'/>
+            	</div>
+            	<div class='item-body-container'>
+            		<div class='item-date'>{{{data.post_date}}} {{{data.post_end_date}}}</div>
+            		<div class='item-loc'>{{{data.post_location}}}</div>
+            		<h3>{{{data.post_title}}}</h3>
+            		<div class='item-body collapsed'><p>{{{data.post_body}}}</p></div>
+            	</div>
+            	<div class='item-button-container {{{data.button_hide_class}}}'>
+            	<a href='{{{data.post_registration_link}}}'>
+            		<div class='reg-view-btn'>{{{data.post_link_text}}}</div>
+            	</a>
+            	</div>
+            </div>
+         </script>
+         <script type="text/html" id="tmpl-press">
+            <div class="block-container">
+              <div class='blog-block press-room item_cell'>
+                <div class="item-body-container entry">
+                  <div class="meta">
+                    <div class="post_date">{{{data.post_date}}}</div>
+                    <div class="blog_type">| <a>{{{data.post_terms}}}</a></div>
+                    <h2 class="blog_title"><a href="{{{data.title_link}}}" target="{{{data.target_blank}}}">{{{data.post_title}}}</a></h2>
+                  </div>
+                </div>
+                <div class="content"><p>{{{data.post_body}}}</p></div>
+                <div class="more_link"><div class="learn-more"><a href="{{{data.title_link}}}" title="{{{data.post_title}}}">READ MORE</a></div></div>
+              </div>
+            </div>
+         </script>
+         <script type="text/html" id="tmpl-newsletter">
+            <div class='item-cell collapsed {{{data.is_featured}}}' >
+                <div class='item-body-container'>
+                    <div class='item-date'>{{{data.post_date}}} {{{data.post_end_date}}}</div>
+                    <h3>{{{data.post_title}}}</h3>
+                </div>
+                <div class='newsletter-abstract-container'>
+                {{{data.post_body}}}
+                </div>
+                <div class='item-button-container {{{data.button_hide_class}}}'>
+                    <a href='{{{data.post_permalink}}}'>
+                        <div class='reg-view-btn'>Learn More</div>
+                    </a>
+                </div>
+            </div>
+         </script>
+         <script type="text/html" id="tmpl-result">
+            <div class="search-result">
+            	<a href="{{data.url}}" data-type="{{data.type}}">
+            		<span class="title">{{data.title}}</span>
+            		<span class="snippet">
+            			<# if ( data.highlight.body ) { #>
+            				{{{data.highlight.body}}}
+            			<# } else { #>
+            				{{{data.body}}}
+            			<# } #>
+            		</span>
+            	</a>
+            </div>
+         </script><script language="javascript" type="text/javascript">var sfjq$ = jQuery.noConflict(), $ = jQuery.noConflict();</script><script type="text/javascript">
+            /* <![CDATA[ */
+            var code_prettify_settings = {"base_url":"https:\/\/hortonworks.com\/wp-content\/plugins\/code-prettify\/prettify"};
+            /* ]]> */
+         </script>
+         <script type="text/javascript">
+            /* <![CDATA[ */
+            var HMUUD = {"version":"1510338120","groups":{"default":{"title":"Please tell us a little about yourself : ","blurb":"Registration is required for this content. ","tiers":[["firstName","lastName","email","phone","company","leadRole"]]},"webinar":{"title":"Webinar Registration","blurb":"Please register to view this webinar","tiers":[["firstName","lastName","company","email","phone","title"]]},"dev":{"title":"Questions for HDP Users.","blurb":"We\\\\\\'d love to know how you are using HDP","tiers":[["firstName","lastName","email","Lead_Comment__c"],["company","mainPhone","leadRole"]]},"lite":{"title":"","blurb":"","tiers":[{"1":"firstName","2":"lastName","3":"email","4":"company"}]},"register":{"title":"Registration Required","blurb":"Please register to get access to this content.","tiers":[{"1":"firstName","2":"lastName","3":"email","4":"phone","5":"title","6":"company"}]},"sandbox":{"title":"Register your Sandbox","blurb":"Hortonworks Sandboxes are the best ways to try and learn HDP and HDF. Please register and agree to the terms of service. ","tiers":[["FirstName","LastName","Email","Phone","Company","jobFunction","I_Accept_The_Terms_and_Conditions__c","Request_Sales_Call__c"],["I_Accept_The_Terms_and_Conditions__c","Request_Sales_Call__c"]]},"hdf":{"title":"Register your Hortonworks DataFlow","blurb":"Hortonworks DataFlow is the best way to learn and try HDF. Please register and agree to the terms of service. ","tiers":[["FirstName","LastName","Email","Phone","Company","LeadRole","I_Accept_The_Terms_and_Conditions__c","Request_Sales_Call__c"],["I_Accept_The_Terms_and_Conditions__c","Request_Sales_Call__c"]]},"hdp":{"title":"Register your Hortonworks Data Platform","blurb":"Please register and agree to the terms of service. ","tiers":[["FirstName","LastName","Email","Phone","Company","LeadRole","I_Accept_The_Terms_and_Conditions__c","Request_Sales_Call__c"],["I_Accept_The_Terms_and_Conditions__c","Request_Sales_Call__c"]]}},"ajaxurl":"https:\/\/hortonworks.com\/wp-admin\/admin-ajax.php"};
+            var HMUCG = {"nonce":"746aef3563","optin":"no_optin","ajaxurl":"https:\/\/hortonworks.com\/wp-admin\/admin-ajax.php"};
+            /* ]]> */
+         </script>
+         <script type="text/javascript" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/scripts.js"></script>
+         <script type="text/javascript" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/wp-embed.js"></script>
+         <script type="text/javascript" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/forms2.js"></script>
+      </div>
+      <script type="text/javascript" id="">(function(){function b(){!1===c&&(c=!0,Munchkin.init("549-QAL-086",{wsInfo:"j1RQ"}))}var c=!1,a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="//munchkin.marketo.net/munchkin-beta.js";a.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||b()};a.onload=b;document.getElementsByTagName("head")[0].appendChild(a)})();</script><script type="text/javascript" id="">_bizo_data_partner_id="6008";</script>
+      <script type="text/javascript" id="">(function(){var b=document.getElementsByTagName("script")[0],a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===window.location.protocol?"https://sjs":"http://js")+".bizographics.com/insight.min.js";b.parentNode.insertBefore(a,b)})();</script>
+      <script type="text/javascript" id="">!function(b,c,d,a){b.twq||(a=b.twq=function(){a.exe?a.exe.apply(a,arguments):a.queue.push(arguments)},a.version="1",a.queue=[],t=c.createElement(d),t.async=!0,t.src="//static.ads-twitter.com/uwt.js",s=c.getElementsByTagName(d)[0],s.parentNode.insertBefore(t,s))}(window,document,"script");twq("init","nutxd");twq("track","PageView");</script>
+      <script type="text/javascript" id="">(function(a,b,c,d,e){a=b.createElement(c);b=b.getElementsByTagName(c)[0];a.async=1;a.id=e;a.src=d;b.parentNode.insertBefore(a,b)})(window,document,"script","https://scripts.demandbase.com/Toj3rf6N.min.js","demandbase_js_lib");</script>
+      <script type="text/javascript" id="">var bfId="5GlkBhxzEOE4cNzx",bfSession=.041666666666666664;(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===document.location.protocol?"https://":"http://")+"munchkin.brightfunnel.com/js/build/bf-munchkin.min.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script>
+      <script type="text/javascript" id="" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/overlay.js"></script>
+      <script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","145271415959502");fbq("track","PageView");</script>
+      <noscript>
+         <img height="1" width="1" src="https://www.facebook.com/tr?id=145271415959502&amp;ev=PageView
+            &amp;noscript=1">
+      </noscript>
+      <script type="text/javascript" id="">adroll_adv_id="4IYMCKRHLVAD5KTPWRFZRK";adroll_pix_id="VUVX55NIRRALVEIRCEALQS";
+         (function(){var a=function(){if(document.readyState&&!/loaded|complete/.test(document.readyState))setTimeout(a,10);else if(window.__adroll_loaded){var b=document.createElement("script"),c="https:"==document.location.protocol?"https://s.adroll.com":"http://a.adroll.com";b.setAttribute("async","true");b.type="text/javascript";b.src=c+"/j/roundtrip.js";((document.getElementsByTagName("head")||[null])[0]||document.getElementsByTagName("script")[0].parentNode).appendChild(b)}else __adroll_loaded=!0,setTimeout(a,
+         50)};window.addEventListener?window.addEventListener("load",a,!1):window.attachEvent("onload",a)})();
+      </script><script type="text/javascript" id="">(function(b,c,e,f,d){b[d]=b[d]||[];var g=function(){var a={ti:"25024314"};a.q=b[d];b[d]=new UET(a);b[d].push("pageLoad")};var a=c.createElement(e);a.src=f;a.async=1;a.onload=a.onreadystatechange=function(){var b=this.readyState;b&&"loaded"!==b&&"complete"!==b||(g(),a.onload=a.onreadystatechange=null)};c=c.getElementsByTagName(e)[0];c.parentNode.insertBefore(a,c)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+      <link href="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/overlay.css" rel="stylesheet" type="text/css">
+      <div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.6838487584447142"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.37727795246326123" alt="" src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/0.txt" width="0" height="0"></div>
+      <div class="swiftype-widget">
+         <div class="autocomplete" style="position: absolute; z-index: 9999; top: 1503px; left: 566px; display: none;">
+            <ul></ul>
+         </div>
+      </div>
+      <div class="swiftype-widget">
+         <div class="autocomplete" style="position: absolute; z-index: 9999; top: 57px; left: -190px; display: none;">
+            <ul></ul>
+         </div>
+      </div>
+      <div class="outer-box">
+         <div class="overlay-form">
+            <div id="video" style="margin-top: 379.403px; padding: 0px;"><span id="close-video" type="button" class="close-video">close<img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/overlay-close_002.png" alt="Close button"></span><iframe src="" class="loader" width="685.3333333333334px" height="387.1939736346516px"></iframe></div>
+         </div>
+         <div class="overlay-elephant-logo"><img src="Streaming%20Analytics%20Manager%20-%20Hortonworks_files/logo1.png" alt="Close button"></div>
+      </div>
+      <div style="display: none; visibility: hidden;">
+         <script type="text/javascript" charset="utf-8">window._eiq=window._eiq||[];window._engagio_settings={accountId:"65307759f492b5f1e631ef27c6b4f870ed530850"};(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"==document.location.protocol?"https://":"http://")+"web-analytics.engagio.com/js/ei.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script>
+      </div>
+   </body>
+</html>
